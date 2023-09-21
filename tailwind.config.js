@@ -11,7 +11,16 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-red':'url("/images/red-gradient.png")',
+        'landing':'url("/images/landing.png")',
+        'ux':'url(/images/ux.png)'
       },
+      fontFamily:{
+        epilogue : ['Epilogue', 'sans-serif']
+      },
+      gridTemplateColumns:{
+        'landing-grid':'repeat(3, 480px)'
+      }
     },
   },
   plugins: [],
