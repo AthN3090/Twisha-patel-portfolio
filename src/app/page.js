@@ -1,13 +1,26 @@
+'use client'
 import Image from 'next/image'
 import twisha from '../../public/images/twisha.png'
 import Work from '@/components/Work/Work';
 import Hobby from '@/components/Hobby/Hobby';
 import Footer from '@/components/Footer/Footer';
+import { useState } from 'react';
 export default function Home() {
+  const [hover, setHover] = useState(false)
+  function changeToFaceBackground(e){
+    setHover(true)
+  }
+  function changeToOriginalBackground(e){
+    setHover(false)
+  }
+
+
+
   return (
     <main className="font-epilogue">
       <div>
-        <div className="bg-landing bg-no-repeat bg-[length:100%] w-full max-h-screen aspect-[16/9]">
+        <div className={"bg-no-repeat bg-[length:100%] w-full max-h-screen aspect-[16/9] relative  " +  `${hover ? "bg-landing-hey duration-100":"bg-landing duration-100"}`}>
+        <div className='absolute h-full w-[25%] aspect-[16/9] right-[12.5%]' onMouseEnter={changeToFaceBackground} onMouseLeave={changeToOriginalBackground}></div>
           <div className="flex max-w-[1280px] mx-auto justify-between h-full">
             <div className="flex flex-col justify-center gap-5 max-w-[666px] m-28">
               <p className="text-3xl font-semibold">Hi, I am Twisha Patel</p>

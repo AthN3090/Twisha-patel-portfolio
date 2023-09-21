@@ -13,7 +13,8 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'gradient-red':'url("/images/red-gradient.png")',
         'landing':'url("/images/landing.png")',
-        'ux':'url(/images/ux.png)'
+        'ux':'url(/images/ux.png)',
+        'landing-hey':'url(/images/hey.png)'
       },
       fontFamily:{
         epilogue : ['Epilogue', 'sans-serif']
