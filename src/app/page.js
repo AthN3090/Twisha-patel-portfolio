@@ -8,13 +8,8 @@ export default function Home() {
     <main className="font-epilogue">
       <div>
         <div className="bg-landing bg-no-repeat bg-[length:100%] w-full max-h-screen aspect-[16/9]">
-        {/* <div className="flex justify-center mx-auto aspect-[16/9]">
-              <div className='w-[474px] border'></div>
-              <div className='w-[474px] border'></div>
-              <Image src={twisha} alt="twisha-photo" className="w-[474px]" />
-            </div> */}
           <div className="flex max-w-[1280px] mx-auto justify-between h-full">
-            <div className="flex flex-col justify-center gap-5 max-w-[666px]">
+            <div className="flex flex-col justify-center gap-5 max-w-[666px] m-28">
               <p className="text-3xl font-semibold">Hi, I am Twisha Patel</p>
               <p className="font-semibold text-7xl">User Experience Designer</p>
               <p className="text-xl font-medium">
