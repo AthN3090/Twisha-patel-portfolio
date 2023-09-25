@@ -1,7 +1,36 @@
+'use client'
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 function Navbar() {
+
+    const [showNav, setShowNav] = useState(true)
+    const prevScroll = useRef(0)
+
+    
+
+    useEffect(()=>{
+      function scrollListener(){
+        const currScroll = window.scrollY
+        if(currScroll > prevScroll.current){
+          setShowNav(false)
+          console.log(showNav)
+          
+        }else{
+          setShowNav(true)
+          console.log(showNav)
+        }
+        prevScroll.current = currScroll
+
+    } 
+      window.addEventListener('scroll', scrollListener)
+
+      return () =>{
+        window.removeEventListener('scroll', scrollListener)
+      }
+      
+    },[showNav])
     return (
-      <nav className="border-b fixed w-full bg-white z-10">
+      <nav className={"border-b w-full bg-white top-0 z-[1] fixed" + " " + `${showNav ? "translate-y-0 transition-all":"-translate-y-full transition-all"}`}>
         <div className="mx-10">
           <div className="flex items-center">
             <div>
