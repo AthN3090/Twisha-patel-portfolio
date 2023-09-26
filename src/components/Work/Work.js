@@ -4,9 +4,60 @@ import { useEffect, useRef, useState } from "react";
 function Work() {
   const sticky = useRef(null)
   const stickyContainer = useRef(null)
-  const card = useRef(null)
+  const stickyBackground = useRef(null)
+  const card = useRef([])
   const horizontalScrollableContent = useRef(null)
-  useEffect(()=>{
+
+  const refPush = (el) => {card.current.push(el)}
+
+  
+  useEffect(() => {
+    let options = {
+      rootMargin: "0px",
+      threshold: 0.3,
+    };
+
+    const observer = new IntersectionObserver((entries, callback) => {
+      entries.forEach((entry, index) => {
+        if(entry.isIntersecting){
+          console.log(entry.target.id)
+          // if (entry.target.id == 1) {
+          //   stickyBackground.current.style.background =
+          //     "linear-gradient(180deg, rgba(245, 243, 255, 0.00) 0%, rgba(239, 255, 234, 0.00) 0.01%, rgba(239, 255, 234, 0.50) 14.36%, #EFFFEA 50%, rgba(239, 255, 234, 0.50) 83.82%, rgba(243, 255, 249, 0.00) 100%, rgba(239, 255, 234, 0.00) 100%)";
+          // }
+          // if (entry.target.id == 2) {
+          //   stickyBackground.current.style.background =
+          //     "linear-gradient(180deg, rgba(245, 243, 255, 0.00) 0%, rgba(255, 234, 235, 0.00) 0.01%, rgba(255, 234, 235, 0.50) 14.36%, #FFEAEB 50%, rgba(255, 234, 235, 0.50) 83.82%, rgba(243, 255, 249, 0.00) 100%, rgba(255, 234, 235, 0.00) 100%)";
+          // }
+          // if (entry.target.id == 3) {
+          //   stickyBackground.current.style.background =
+          //     "linear-gradient(180deg, rgba(245, 243, 255, 0.00) 0%, rgba(234, 240, 255, 0.00) 0.01%, rgba(234, 240, 255, 0.50) 14.36%, #EAF0FF 50%, rgba(234, 240, 255, 0.50) 83.82%, rgba(243, 255, 249, 0.00) 100%, rgba(234, 240, 255, 0.00) 100%)";
+          // }
+          if (entry.target.id == 1) {
+            stickyBackground.current.style.background =
+            "#EFFFEA"
+          }
+          if (entry.target.id == 2) {
+            stickyBackground.current.style.background =
+            "#FFEAEB"
+          }
+          if (entry.target.id == 3) {
+            stickyBackground.current.style.background =
+              "#EAF0FF"
+          }
+        }
+      })
+    },options)
+    card.current.forEach((item) => {
+      observer.observe(item);
+    });
+
+
+
+
+
+
+
     function getScrollHeight(){
       const height = window.innerHeight
       const width = window.innerWidth
@@ -41,10 +92,10 @@ function Work() {
         </div>
         <div className="min-h-screen relative" ref={stickyContainer}>
           <div className="sticky top-0" ref={sticky}>
-            <div className="bg-gradient-red h-screen bg-[length:100%_100%]  bg-no-repeat flex items-center overflow-x-hidden">
+            <div ref={stickyBackground} className="h-screen bg-[length:100%_100%]  bg-no-repeat flex items-center overflow-x-hidden transition-all duration-500">
               <div className="flex min-w-full"  ref={horizontalScrollableContent}>
                 <div className="w-full shrink-0">
-                  <div className="w-[1280px] shrink-0 mx-auto flex gap-[150px] justify-between items-center h-full top-1/2">
+                  <div ref={refPush} id={1} className="w-[1280px] shrink-0 mx-auto flex gap-[150px] justify-between items-center h-full top-1/2">
                     <div className="flex justify-center items-center">
                       <Image
                         src="/images/project1.png"
@@ -73,7 +124,7 @@ function Work() {
                   </div>
                 </div>
                 <div className="w-full shrink-0">
-                  <div className="w-[1280px] shrink-0 mx-auto flex gap-[150px] justify-between items-center h-full top-1/2">
+                  <div ref={refPush}  id={2} className="w-[1280px] shrink-0 mx-auto flex gap-[150px] justify-between items-center h-full top-1/2">
                     <div className="flex justify-center items-center">
                       <Image
                         src="/images/project1.png"
@@ -102,7 +153,7 @@ function Work() {
                   </div>
                 </div>
                 <div className="w-full shrink-0">
-                  <div ref={card} className="w-[1280px] shrink-0 mx-auto flex gap-[150px] justify-between items-center h-full top-1/2">
+                  <div ref={refPush} id={3} className="w-[1280px] shrink-0 mx-auto flex gap-[150px] justify-between items-center h-full top-1/2">
                     <div className="flex justify-center items-center">
                       <Image
                         src="/images/project1.png"
