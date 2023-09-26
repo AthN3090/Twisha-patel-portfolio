@@ -13,11 +13,8 @@ function Navbar() {
         const currScroll = window.scrollY
         if(currScroll > prevScroll.current){
           setShowNav(false)
-          console.log(showNav)
-          
         }else{
           setShowNav(true)
-          console.log(showNav)
         }
         prevScroll.current = currScroll
 
