@@ -14,7 +14,7 @@ function Work() {
   useEffect(() => {
     let options = {
       rootMargin: "0px",
-      threshold: 0.3,
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver((entries, callback) => {
@@ -98,7 +98,7 @@ function Work() {
                   <div ref={refPush} id={1} className="w-[1280px] shrink-0 mx-auto flex gap-[150px] justify-between items-center h-full top-1/2">
                     <div className="flex justify-center items-center">
                       <Image
-                        src="/images/project1.png"
+                        src="/images/youmatter.png"
                         height={766}
                         width={864}
                         alt="project1"
@@ -127,7 +127,7 @@ function Work() {
                   <div ref={refPush}  id={2} className="w-[1280px] shrink-0 mx-auto flex gap-[150px] justify-between items-center h-full top-1/2">
                     <div className="flex justify-center items-center">
                       <Image
-                        src="/images/project1.png"
+                        src="/images/youtube.png"
                         height={766}
                         width={864}
                         alt="project1"
@@ -156,7 +156,7 @@ function Work() {
                   <div ref={refPush} id={3} className="w-[1280px] shrink-0 mx-auto flex gap-[150px] justify-between items-center h-full top-1/2">
                     <div className="flex justify-center items-center">
                       <Image
-                        src="/images/project1.png"
+                        src="/images/azent.png"
                         height={766}
                         width={864}
                         alt="project1"
