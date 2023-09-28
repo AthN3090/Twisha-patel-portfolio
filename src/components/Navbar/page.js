@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 function Navbar() {
 
@@ -44,19 +45,25 @@ function Navbar() {
             <div className="ml-auto">
                 <ul className="flex items-center font-epilogue  pt-1 gap-[80px]">
                     <li className="px-5 py-5">
-                        Work
+                        <Link href="#">Work
+                          </Link>
                     </li>
                     
                     <li className="px-5 py-5">
-                        About
+                        <Link href="/about">About
+                          </Link>
                     </li>
                     
                     <li className="px-5 py-5">
-                        Contact
+                        <Link href="#"> Contact
+                          </Link>
                     </li>
                     
                     <li className="px-5 py-5">
-                        Resume
+                        <Link href="#">
+                          Resume
+                        </Link>
+                        
                     </li>
                 </ul>
             </div>
