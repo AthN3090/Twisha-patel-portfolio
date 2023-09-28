@@ -2,15 +2,15 @@ import Image from "next/image";
 function About() {
     return (
       <main>
-        <div className="max-w-[1440px] bg-[#FAFAFA] h-screen mx-auto pt-16 flex font-epilogue">
+        <div className="max-w-[1280px] bg-[#FAFAFA] h-screen mx-auto pt-16 flex font-epilogue">
           <div className="w-1/2 relative border-l flex items-center justify-center ">
             <Image  className="py-16 px-20" src="/images/about.png" fill objectFit="contain" alt="about"/>
           </div>
           <div className="w-1/2 py-16 px-20 border">
-            <p className="font-semibold text-2xl">
+            <p className="font-semibold xl:text-2xl">
                 A little bit about myself
             </p>
-            <p className="mt-4 text-lg text-[#2D2D2D] leading-7">
+            <p className="mt-4 text-[#2D2D2D] leading-7 ">
               My name, Twisha, carries the beautiful meaning of &quot;divine aura&quot;.
               My journey as a UX designer has been quite an interesting one.
               While my academic background is rooted in computer science, I
