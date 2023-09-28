@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 function Work() {
   const sticky = useRef(null)
   const stickyContainer = useRef(null)
@@ -11,12 +11,15 @@ function Work() {
   const refPush = (el) => {card.current.push(el)}
 
   
-  useEffect(() => {
+  
+  useLayoutEffect(() => {
     let options = {
       rootMargin: "0px",
       threshold: 0.5,
     };
 
+    const projectCard = card.current
+    
     const observer = new IntersectionObserver((entries, callback) => {
       entries.forEach((entry, index) => {
         if(entry.isIntersecting){
@@ -35,10 +38,26 @@ function Work() {
         }
       })
     },options)
-    card.current.forEach((item) => {
-      observer.observe(item);
-    });
-  },[])
+    if(projectCard.length > 0){
+      projectCard.forEach((item) => {
+        if(item) {
+          observer.observe(item)
+        }
+      });
+    }
+    
+    return ()=>{
+      
+      if(projectCard.length > 0){
+        projectCard.forEach((item) => {
+          if(item) {
+            observer.unobserve(item)
+          }
+        });
+      }
+      
+    }
+  }, [])
     return (
       <section>
         <div className="border-b py-10 text-center font-semibold text-4xl bg-white">
@@ -84,8 +103,8 @@ function Work() {
                         with YouTube Learning.{" "}
                       </p>
 
-                      <Link href="#">
-                        <button className="py-3 px-5 border border-[#828282] flex gap-5 items-center">
+                      <Link href="/you-matter">
+                        <button className="py-3 px-5 border border-[#828282] flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                           <span className="pt-[2px]">
                             Read case study{" "}
                             </span>
@@ -132,7 +151,7 @@ function Work() {
                       </p>
 
                       <Link href="#">
-                        <button className="py-3 px-5 border border-[#828282] flex gap-5 items-center">
+                        <button className="py-3 px-5 border border-[#828282] flex gap-5 transition-all hover:gap-7 hover:underline  items-center">
                         <span className="pt-[2px]">
                             Read case study{" "}
                             </span>
@@ -177,7 +196,7 @@ function Work() {
                       </p>
 
                       <Link href="#">
-                        <button className="py-3 px-5 border border-[#828282] flex gap-5 items-center">
+                        <button className="py-3 px-5 border border-[#828282] flex gap-5 transition-all hover:gap-7 hover:underline  items-center">
                         <span className="pt-[2px]">
                             Read case study{" "}
                             </span>

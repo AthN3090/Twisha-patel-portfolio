@@ -1,8 +1,9 @@
 "use client"
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 
 function Pointer() {
   const cursor = {
+    PointerEvent: "none",
     position: "fixed",
     display: "block",
     borderRadius: "0",
@@ -18,7 +19,7 @@ function Pointer() {
     width: "10px",
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const cursor = document.querySelector(".cursor");
     const circles = document.querySelectorAll(".circle");
     let [x, y] = [0, 0];
@@ -40,8 +41,8 @@ function Pointer() {
       cursor.style.left = x + "px";
 
       circles.forEach((circle, index) => {
-        circle.style.left = x1 - x - 8 + "px";
-        circle.style.top = y1 - y - 12 + "px";
+        circle.style.left = x1 - x + 12 + "px";
+        circle.style.top = y1 - y - 3  + "px";
 
         circle.style.scale = 1 - index / circles.length;
 

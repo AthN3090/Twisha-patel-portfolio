@@ -31,6 +31,7 @@ function Navbar() {
       <nav className={"border-b w-full bg-white top-0 z-[1] fixed" + " " + `${showNav ? "translate-y-0 transition-all":"-translate-y-full transition-all"}`}>
         <div className="mx-10">
           <div className="flex items-center">
+            <Link className="flex items-center" href="/">
             <div>
               <Image
                 src="/images/diamond.gif"
@@ -42,6 +43,7 @@ function Navbar() {
             <div className="font-epilogue italic font-bold">
               <p className="pt-1">TWISHA</p>
             </div>
+            </Link>
             <div className="ml-auto">
                 <ul className="flex items-center font-epilogue  pt-1 gap-[80px]">
                     <li className="px-5 py-5">
