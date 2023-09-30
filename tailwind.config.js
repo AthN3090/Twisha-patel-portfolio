@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gap:{
+        'very-thin' :"0.8px"
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':

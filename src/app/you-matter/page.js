@@ -25,10 +25,10 @@ function CaseStudy1() {
           <div
             style={{
               background: "url('./images/youmatter/hero.png')",
-              backgroundSize: "120%",
+              backgroundSize: "105%",
               backgroundRepeat: "no-repeat",
             }}
-            className="xl:h-[450px] lg:h-[300px] md:h-[200px] sm:[150px] bg-cover aspect-auto"
+            className="h-[27vw] bg-cover aspect-auto"
             ref={banner}
           ></div>
           <div className="bg-[#FAFAFA] " style={{}}>
