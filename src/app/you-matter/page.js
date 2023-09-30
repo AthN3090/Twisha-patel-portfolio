@@ -1,6 +1,7 @@
 "use client"
 import { Bagel_Fat_One } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 function CaseStudy1() {
   const banner = useRef(null)
@@ -22,8 +23,12 @@ function CaseStudy1() {
       <main className="text-[#2D2D2D]">
         <div>
           <div
-            style={{ background: "url('./images/youmatter/hero.png')", backgroundSize: "120%", backgroundRepeat: "no-repeat"}}
-            className="xl:h-[400px] lg:h-[300px] md:h-[200px] sm:[150px] bg-cover aspect-auto"
+            style={{
+              background: "url('./images/youmatter/hero.png')",
+              backgroundSize: "120%",
+              backgroundRepeat: "no-repeat",
+            }}
+            className="xl:h-[450px] lg:h-[300px] md:h-[200px] sm:[150px] bg-cover aspect-auto"
             ref={banner}
           ></div>
           <div className="bg-[#FAFAFA] " style={{}}>
@@ -329,47 +334,63 @@ function CaseStudy1() {
                       Now comes the exciting part- Solving 😎
                     </p>
                     <p className="my-4">
-                      I started with making a few <span className="font-semibold">assumptions</span> that helped me
-                      build a relevant product-
+                      I started with making a few{" "}
+                      <span className="font-semibold">assumptions</span> that
+                      helped me build a relevant product-
                     </p>
                     <ul className="list-disc pl-5 flex flex-col gap-4">
                       <li>
                         When the user adds an image to complete a certain task
-                        in his/her routine, <span className="font-semibold">assuming we will have image
-                        processing techniques for checking if the purpose of
-                        task and image matches.</span>
+                        in his/her routine,{" "}
+                        <span className="font-semibold">
+                          assuming we will have image processing techniques for
+                          checking if the purpose of task and image matches.
+                        </span>
                       </li>
                       <li>
                         Users will have two options to access the premium
                         features, by purchasing the premium package or by
                         collecting coins by joining in and completing weekly
-                        challenges. So <span className="font-semibold">assuming a user joins in a weekly
-                        challenge he/she will have to complete certain tasks</span>
+                        challenges. So{" "}
+                        <span className="font-semibold">
+                          assuming a user joins in a weekly challenge he/she
+                          will have to complete certain tasks
+                        </span>
                         which will include to first make a commitment by posting
                         about the challenge he/she is doing on any social media
-                        platform. <span className="font-semibold">This will help advertise the &quot;You
-                        Matter&quot; app.</span>
+                        platform.{" "}
+                        <span className="font-semibold">
+                          This will help advertise the &quot;You Matter&quot;
+                          app.
+                        </span>
                       </li>
                       <li>
-                      <span className="font-semibold">Assuming &quot;You Matter&quot; will have a professional
-                        team</span> which will provide exclusive and specialized
-                        content, challenges, quizzes and courses related to the
-                        niche in premium package or users can use their coins
-                        (explained above)
+                        <span className="font-semibold">
+                          Assuming &quot;You Matter&quot; will have a
+                          professional team
+                        </span>{" "}
+                        which will provide exclusive and specialized content,
+                        challenges, quizzes and courses related to the niche in
+                        premium package or users can use their coins (explained
+                        above)
                       </li>
                       <li>
-                      <span className="font-semibold">Assuming professional therapists will partner with our
-                        team </span> and provide their service to the users. (included
-                        in premium subscription/pay the therapist fee and
-                        specially for students- use coins to unlock).
+                        <span className="font-semibold">
+                          Assuming professional therapists will partner with our
+                          team{" "}
+                        </span>{" "}
+                        and provide their service to the users. (included in
+                        premium subscription/pay the therapist fee and specially
+                        for students- use coins to unlock).
                       </li>
                       <li>
-                        There will be a <span className="font-semibold">separate app for the therapists</span>
+                        There will be a{" "}
+                        <span className="font-semibold">
+                          separate app for the therapists
+                        </span>
                         partnered with our team.
                       </li>
                     </ul>
-
-                    
                   </div>
                 </div>
               </div>
@@ -377,26 +398,135 @@ function CaseStudy1() {
           </div>
           {/* Final Designs */}
           <div className="flex flex-col items-center my-7">
-            <p className="font-bold py-3 text-xl">Final Designs - (click here to interact with the prototype)</p>
-          <div className="max-w-[1280px] px-4 ">
-                      <video autoPlay loop muted className="w-full">
-                        <source src="/images/youmatter/design/1.mp4" type="video/mp4" /> 
-                      </video>
-                      <video autoPlay loop muted className="w-full">
-                        <source src="/images/youmatter/design/2.mp4" type="video/mp4" /> 
-                      </video>
-              
-                      <Image src="/images/youmatter/design/3.png" height={900} width={1500} alt="design"></Image>
-                      <video autoPlay loop muted className="w-full">
-                        <source src="/images/youmatter/design/4.mp4" type="video/mp4" /> 
-                      </video>
-                      <Image src="/images/youmatter/design/5.png" height={900} width={1500} alt="design"></Image>
-                      <Image src="/images/youmatter/design/6.png" height={900} width={1500} alt="design"></Image>
-                      <Image src="/images/youmatter/design/7.png" height={900} width={1500} alt="design"></Image>
-                      <Image src="/images/youmatter/design/8.png" height={900} width={1500} alt="design"></Image>
-                      <Image src="/images/youmatter/design/9.png" height={900} width={1500} alt="design"></Image>
-                    </div>
+            <p className="font-bold py-3 text-xl">
+              Final Designs - (click here to interact with the prototype)
+            </p>
+            <div className="max-w-[1280px] px-4 ">
+              <video autoPlay loop muted className="w-full">
+                <source src="/images/youmatter/design/1.mp4" type="video/mp4" />
+              </video>
+              <video autoPlay loop muted className="w-full">
+                <source src="/images/youmatter/design/2.mp4" type="video/mp4" />
+              </video>
 
+              <Image
+                src="/images/youmatter/design/3.png"
+                height={900}
+                width={1500}
+                alt="design"
+              ></Image>
+              <video autoPlay loop muted className="w-full">
+                <source src="/images/youmatter/design/4.mp4" type="video/mp4" />
+              </video>
+              <Image
+                src="/images/youmatter/design/5.png"
+                height={900}
+                width={1500}
+                alt="design"
+              ></Image>
+              <Image
+                src="/images/youmatter/design/6.png"
+                height={900}
+                width={1500}
+                alt="design"
+              ></Image>
+              <Image
+                src="/images/youmatter/design/7.png"
+                height={900}
+                width={1500}
+                alt="design"
+              ></Image>
+              <Image
+                src="/images/youmatter/design/8.png"
+                height={900}
+                width={1500}
+                alt="design"
+              ></Image>
+              <Image
+                src="/images/youmatter/design/9.png"
+                height={900}
+                width={1500}
+                alt="design"
+              ></Image>
+            </div>
+            <div></div>
+          </div>
+
+          <div className="max-w-[1280px] mx-auto p-4 mt-10 font-epilogue text-[#2D2D2D] leading-7 text-lg">
+            {/* Testing the prototype */}
+            <div>
+              <p className="text-[#67895E] text-xl font-bold mb-5">
+                Testing The Prototype 📱
+              </p>
+              <p>
+                All the work up to this point boils down to this moment. The
+                moment of truth! I ultimately wanted users to be able to
+                accomplish tasks give to them during the usability testing.{" "}
+                <span className="font-bold">
+                  Users were given the task of completing routines, editing
+                  routines, going to journal page and talking with their therapy
+                  pet.
+                </span>
+                As result, participants were able to complete all given tasks
+                with 100% accuracy, citing ease of use and instant familiarity
+                of user interface elements.
+              </p>
+              <p className="mt-4 font-semibold">Feedback from participants-</p>
+              <br></br>
+              <ul className="list-disc pl-5 flex flex-col gap-4">
+                <li>
+                  &quot;The app is fun to use. I liked how dynamic and
+                  interactive it is. The pet feature is so cool that it makes
+                  you stick to the app. Overall loved it, although i would like
+                  to see more pet options.&quot;{" "}
+                </li>
+                <li>
+                  &quot;It&apos;s a very helpful app for someone with poor
+                  mental health. It gives u the sense of purpose with the pet
+                  feature and it helps you be consistent with your daily
+                  plan&quot;
+                </li>
+                <li>
+                  &quot;I really liked how this app provides relevant free
+                  resources. There is also an alternative to buying premium
+                  package, by completing challenges and collecting coins, that
+                  makes the app much more affordable and user base would
+                  increase.&quot;
+                </li>
+              </ul>
+            </div>
+            {/* Conclusion */}
+            <div>
+              <p className="text-[#67895E] text-xl font-bold mt-10">
+                Conclusion 👩🏻‍💻
+              </p>
+              <p className="my-5">
+                Designing the app has been a challenging and rewarding journey.
+                It was clear from the onset that the major challenge will be to
+                make users feel warmth and stay motivated to complete their
+                routines and be consistent. I understood the needs of the users
+                through the survey and conversations. Finally, I faced the
+                challenge of creating an engaging app both from the user
+                experience perspective and the visual perspective.
+                <span className="font-bold">
+                  And that’s a wrap. Thank you for reading!
+                </span>
+              </p>
+            </div>
+            {/* case study navigation */}
+            <div className="py-28 flex">
+              <Link className="ml-auto" href="/youtube-Redesigned">
+                <button className="py-3 px-5 border border-[#828282] flex gap-5 transition-all hover:gap-7 hover:underline items-center">
+                  <span className="pt-[2px]">Next Project </span>
+                  <Image
+                    src="/images/right.png"
+                    height={16}
+                    width={16}
+                    alt="right arrow"
+                  ></Image>
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </main>
