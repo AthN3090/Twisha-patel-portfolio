@@ -22,8 +22,8 @@ function CaseStudy1() {
       <main className="text-[#2D2D2D]">
         <div>
           <div
-            style={{ background: "url('./images/youmatter/hero.png')", backgroundSize: "120%" }}
-            className="h-[540px] bg-cover"
+            style={{ background: "url('./images/youmatter/hero.png')", backgroundSize: "120%", backgroundRepeat: "no-repeat"}}
+            className="xl:h-[400px] lg:h-[300px] md:h-[200px] sm:[150px] bg-cover aspect-auto"
             ref={banner}
           ></div>
           <div className="bg-[#FAFAFA] " style={{}}>
@@ -39,12 +39,12 @@ function CaseStudy1() {
                   <p className="text-xs font-bold opacity-70">TYPE</p>
                   <p className="font-semibold">Personal Project</p>
                 </div>
-                <div className="h-[40px] w-[1px] border border-[#A2A2A2]"></div>
+                <div className="w-[1px] border border-[#A2A2A2]"></div>
                 <div>
                   <p className="text-xs font-bold opacity-70">ROLE</p>
                   <p className="font-semibold">Product Designer & Reseach</p>
                 </div>
-                <div className="h-[40px] w-[1px] border border-[#A2A2A2]"></div>
+                <div className=" w-[1px] border border-[#A2A2A2]"></div>
                 <div className="w-[200px]">
                   <p className="text-xs font-bold opacity-70">DURATION</p>
                   <p className="font-semibold">6 Weeks</p>
