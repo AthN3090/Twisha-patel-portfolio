@@ -1,14 +1,33 @@
+"use client"
+import { Bagel_Fat_One } from "next/font/google";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 function CaseStudy1() {
+  const banner = useRef(null)
+
+  useEffect(()=>{
+    const bg = banner.current
+      window.addEventListener('scroll', () =>{
+        if(window.scrollY < 500)
+        bg.style.backgroundPosition = `${-window.scrollY * 0.5}px 0px`
+      })
+
+      return () => {
+        window.removeEventListener('scroll', () =>{
+          bg.style.backgroundPosition = `${-window.scrollY * 0.5}px 0px`
+        })
+      }
+  },[])
     return (
       <main className="text-[#2D2D2D]">
         <div>
           <div
-            style={{ background: "url('./images/youmatter/hero.png')" }}
-            className="h-[540px]"
+            style={{ background: "url('./images/youmatter/hero.png')", backgroundSize: "120%" }}
+            className="h-[540px] bg-cover"
+            ref={banner}
           ></div>
-          <div className="bg-[#FAFAFA] ">
-            <div className="max-w-[1000px] px-4 py-16  mx-auto ">
+          <div className="bg-[#FAFAFA] " style={{}}>
+            <div className="max-w-[1280px] px-4 py-16  mx-auto ">
               <div>
                 <p className="text-xl font-bold  opacity-70">YOU MATTER</p>
                 <p className="text-4xl font-bold  mt-3">
@@ -35,7 +54,7 @@ function CaseStudy1() {
             <div></div>
           </div>
           {/* Main Content */}
-          <div className="max-w-[1000px] px-4 mx-auto mt-10 font-epilogue text-[#2D2D2D] leading-7 text-lg">
+          <div className="max-w-[1280px] px-4 mx-auto mt-10 font-epilogue text-[#2D2D2D] leading-7 text-lg">
             {/* Introduction */}
             <div>
               <p className="text-[#67895E] text-xl font-bold mb-5">
@@ -201,7 +220,7 @@ function CaseStudy1() {
                   Insights from customer comments on apps in same niche-{" "}
                 </p>
                 <br></br>
-                <div className="flex flex-col lg:flex-wrap gap-3 lg:h-[550px] content-center items-center">
+                <div className="flex flex-col lg:flex-wrap gap-3 lg:h-[550px] content-center ">
                   <Image
                     src={"/images/youmatter/review/review1.png"}
                     height={2100}
@@ -359,11 +378,18 @@ function CaseStudy1() {
           {/* Final Designs */}
           <div className="flex flex-col items-center my-7">
             <p className="font-bold py-3 text-xl">Final Designs - (click here to interact with the prototype)</p>
-          <div className="max-w-[1440px] px-4 ">
-                      <Image src="/images/youmatter/design/1.gif" height={900} width={1500} alt="design"></Image>
-                      <Image src="/images/youmatter/design/2.gif" height={900} width={1500} alt="design"></Image>
-                      <Image src="/images/youmatter/design/3.gif" height={900} width={1500} alt="design"></Image>
-                      <Image src="/images/youmatter/design/4.gif" height={900} width={1500} alt="design"></Image>
+          <div className="max-w-[1280px] px-4 ">
+                      <video autoPlay loop muted className="w-full">
+                        <source src="/images/youmatter/design/1.mp4" type="video/mp4" /> 
+                      </video>
+                      <video autoPlay loop muted className="w-full">
+                        <source src="/images/youmatter/design/2.mp4" type="video/mp4" /> 
+                      </video>
+              
+                      <Image src="/images/youmatter/design/3.png" height={900} width={1500} alt="design"></Image>
+                      <video autoPlay loop muted className="w-full">
+                        <source src="/images/youmatter/design/4.mp4" type="video/mp4" /> 
+                      </video>
                       <Image src="/images/youmatter/design/5.png" height={900} width={1500} alt="design"></Image>
                       <Image src="/images/youmatter/design/6.png" height={900} width={1500} alt="design"></Image>
                       <Image src="/images/youmatter/design/7.png" height={900} width={1500} alt="design"></Image>
