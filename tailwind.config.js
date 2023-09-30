@@ -23,7 +23,7 @@ module.exports = {
         epilogue : ['Epilogue', 'sans-serif']
       },
       gridTemplateColumns:{
-        'landing-grid':'repeat(3, 480px)'
+        'landing-grid':'repeat(3, 480px)', 
       }
     },
   },

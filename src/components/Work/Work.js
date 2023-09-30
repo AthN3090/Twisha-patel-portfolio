@@ -89,7 +89,7 @@ function Work() {
                     </div>
                     <div className="max-w-[557px]">
                       <p className="font-medium text-4xl mb-8">You Matter</p>
-                      <p className="font-semibold text-5xl mb-6">
+                      <p className="font-semibold text-5xl mb-6 leading-[64px]">
                         Re-imagining How We Consume Educational Content on
                         YouTube{" "}
                       </p>
@@ -137,7 +137,7 @@ function Work() {
                       <p className="font-medium text-4xl mb-8">
                         YouTube Redesign
                       </p>
-                      <p className="font-semibold text-5xl mb-6">
+                      <p className="font-semibold text-5xl mb-6 leading-[64px]">
                         Build and design your routine with ease{" "}
                       </p>
                       <p className="font-medium text-xl mb-20">
@@ -184,7 +184,7 @@ function Work() {
                       <p className="font-medium text-4xl mb-8">
                         Azent Overseas Education
                       </p>
-                      <p className="font-semibold text-5xl mb-6">
+                      <p className="font-semibold text-5xl mb-6 leading-[64px]">
                         Expense Calculator for Students Planning to Study Abroad{" "}
                       </p>
                       <p className="font-medium text-xl mb-20">

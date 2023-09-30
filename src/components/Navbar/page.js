@@ -44,7 +44,7 @@ function Navbar() {
               <p className="pt-1">TWISHA</p>
             </div>
             </Link>
-            <div className="ml-auto">
+            <div className="ml-auto lg:block hidden">
                 <ul className="flex items-center font-epilogue  pt-1 gap-[80px]">
                     <li className="px-5 py-5">
                         <Link href="#">Work

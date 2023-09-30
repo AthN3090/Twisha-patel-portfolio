@@ -19,17 +19,32 @@ export default function Home() {
   return (
     <main className="font-epilogue">
       <div>
-        <div className={"bg-no-repeat bg-[length:100%] w-full max-h-screen aspect-[16/9] relative  " +  `${hover ? "bg-landing-hey transition-all duration-500":"bg-landing transition-all duration-500"}`}>
-        <div className='absolute h-full w-[25%] aspect-[16/9] right-[12.5%]' onMouseEnter={changeToFaceBackground} onMouseLeave={changeToOriginalBackground}></div>
+        <div
+          className={
+            "bg-no-repeat bg-[length:100%] w-full max-h-screen aspect-[16/9] relative  " +
+            `${
+              hover
+                ? "bg-landing-hey transition-all duration-500"
+                : "bg-landing transition-all duration-500"
+            }`
+          }
+        >
+          <div
+            className="absolute h-full w-[25%] aspect-[16/9] right-[12.5%]"
+            onMouseEnter={changeToFaceBackground}
+            onMouseLeave={changeToOriginalBackground}
+          ></div>
           <div className="flex max-w-[1280px] mx-auto justify-between h-full">
-            <div className="flex flex-col justify-center gap-5 max-w-[666px] m-28">
+            <div className="flex flex-col justify-center max-w-[666px] m-28">
               <p className="text-3xl font-semibold">Hi, I am Twisha Patel</p>
-              <p className="font-semibold text-7xl">User Experience Designer</p>
-              <p className="text-xl font-medium">
-                Crafting delightful, human centred and inclusive experiences.
+              <p className="font-semibold text-7xl mt-7">User Experience Designer</p>
+              <p className="text-xl font-medium mt-5">
+                Crafting Digital Experiences that Inspire and Transform! I
+                believe that a good design has the power to connect with people
+                and change their lives for the better.
               </p>
             </div>
-            
+
             {/* <div>
           <Image
             src={twisha}

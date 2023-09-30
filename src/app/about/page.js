@@ -2,7 +2,7 @@ import Image from "next/image";
 function About() {
     return (
       <main className="flex justify-center">
-        <div className="max-w-[1440px] mx-[180px] bg-[#FAFAFA] h-screen pt-16 flex font-epilogue">
+        <div className="max-w-[1440px] mx-auto bg-[#FAFAFA] h-screen pt-16 flex font-epilogue">
           <div className="w-1/2 relative border-l flex items-center justify-center ">
             <Image  className="py-16 px-20" src="/images/about.png" fill objectFit="contain" alt="about"/>
           </div>
