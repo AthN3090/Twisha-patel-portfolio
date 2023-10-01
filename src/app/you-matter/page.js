@@ -21,11 +21,7 @@ function CaseStudy1() {
   },[])
     return (
       <main id="top" className="text-[#2D2D2D]">
-        
-        <div className="relative">
-          <Link href="#top" className="bg-white p-3 absolute bottom-4 right-4 border border-[#414141] bg-center bg-no-repeat">
-            <Image src="/images/up.png" height={20} width={20} alt="to top"></Image>
-          </Link>
+        <div>
           <div
             style={{
               backgroundImage: "url('./images/youmatter/hero.png')",
@@ -395,7 +391,7 @@ function CaseStudy1() {
           </div>
           {/* Final Designs */}
           <div className="flex flex-col items-center my-7">
-            <p className="font-bold py-3 text-xl">
+            <p className="font-bold p-4 text-xl">
               Final Designs - (
               <Link href="https://www.figma.com/proto/GTNfdyupy0CJQrSPOp2OIU/You-Matter?node-id=1-6&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A6&t=nSWzJOzjDO2rTy6Q-1&mode=design">
                 <span className="text-[#67895E]">click here </span>
@@ -497,7 +493,7 @@ function CaseStudy1() {
               </ul>
             </div>
             {/* Conclusion */}
-            <div>
+            <div className="relative">
               <p className="text-[#67895E] text-xl font-bold mt-10">
                 Conclusion 👩🏻‍💻
               </p>
@@ -513,6 +509,15 @@ function CaseStudy1() {
                   And that’s a wrap. Thank you for reading!
                 </span>
               </p>
+              <Link
+                href="#top"
+                className="bg-white p-3 absolute right-0 border border-[#414141] bg-center bg-no-repeat"
+              ><Image
+                  src="/images/up.png"
+                  height={20}
+                  width={20}
+                  alt="to top"
+                ></Image></Link>
             </div>
             {/* case study navigation */}
             <div className="py-28 flex">
