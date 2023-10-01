@@ -43,6 +43,7 @@ export default function Home() {
                 believe that a good design has the power to connect with people
                 and change their lives for the better.
               </p>
+              <a href="#" className="flex items-center transition-all gap-3 hover:gap-5 hover:underline mt-10 border w-fit p-3 border-[#828282]"> <span className="mt-[2px]">View my resume </span><Image src={"/images/right.svg"} alt="right-arrow" height={16} width={16}></Image> </a>
             </div>
 
             {/* <div>
