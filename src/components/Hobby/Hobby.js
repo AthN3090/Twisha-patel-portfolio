@@ -74,7 +74,7 @@ function Hobby() {
                       <button className="py-3 px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                         <span className="pt-[2px]">View Artwork </span>
                         <Image
-                          src="/images/right.png"
+                          src="/images/right.svg"
                           height={16}
                           width={16}
                           alt="right arrow"
@@ -101,7 +101,7 @@ function Hobby() {
                       <button className="py-3 px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                         <span className="pt-[2px]">View Illustrations </span>
                         <Image
-                          src="/images/right.png"
+                          src="/images/right.svg"
                           height={16}
                           width={16}
                           alt="right arrow"
@@ -128,7 +128,7 @@ function Hobby() {
                       <button className="py-3 px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                         <span className="pt-[2px]">View Designs </span>
                         <Image
-                          src="/images/right.png"
+                          src="/images/right.svg"
                           height={16}
                           width={16}
                           alt="right arrow"
@@ -155,7 +155,7 @@ function Hobby() {
                       <button className="py-3 px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                         <span className="pt-[2px]">View Sewed clothes </span>
                         <Image
-                          src="/images/right.png"
+                          src="/images/right.svg"
                           height={16}
                           width={16}
                           alt="right arrow"

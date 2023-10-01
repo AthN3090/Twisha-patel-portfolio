@@ -21,7 +21,7 @@ export default function Home() {
       <div>
         <div
           className={
-            "bg-no-repeat bg-[length:100%] w-full max-h-screen aspect-[16/9] relative bg-landing bg-fixed" +
+            "bg-no-repeat bg-[length:100%] w-full max-h-screen aspect-[16/9] relative  " +
             `${
               hover
                 ? "bg-landing-hey transition-all duration-500"

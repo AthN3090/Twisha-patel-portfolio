@@ -109,7 +109,7 @@ function Work() {
                             Read case study{" "}
                             </span>
                           <Image
-                            src="/images/right.png"
+                            src="/images/right.svg"
                             height={16}
                             width={16}
                             alt="right arrow"
@@ -156,7 +156,7 @@ function Work() {
                             Read case study{" "}
                             </span>
                           <Image
-                            src="/images/right.png"
+                            src="/images/right.svg"
                             height={16}
                             width={16}
                             alt="right arrow"
@@ -201,7 +201,7 @@ function Work() {
                             Read case study{" "}
                             </span>
                           <Image
-                            src="/images/right.png"
+                            src="/images/right.svg"
                             height={16}
                             width={16}
                             alt="right arrow"

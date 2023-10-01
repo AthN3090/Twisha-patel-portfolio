@@ -513,7 +513,7 @@ function CaseStudy1() {
                 href="#top"
                 className="bg-white p-3 absolute right-0 border border-[#414141] bg-center bg-no-repeat"
               ><Image
-                  src="/images/up.png"
+                  src="/images/up.svg"
                   height={20}
                   width={20}
                   alt="to top"
@@ -525,7 +525,7 @@ function CaseStudy1() {
                 <button className="py-3 px-5 border border-[#828282] flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                   <span className="pt-[2px]">Next Project </span>
                   <Image
-                    src="/images/right.png"
+                    src="/images/right.svg"
                     height={16}
                     width={16}
                     alt="right arrow"
