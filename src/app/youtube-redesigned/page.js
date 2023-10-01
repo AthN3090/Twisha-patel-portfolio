@@ -2,59 +2,54 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-function CaseStudy1() {
+function Casestudy2() {
   const banner = useRef(null)
 
   useEffect(()=>{
-
-    function scrollHandler(){
-      if(window.scrollY >= 0){
-        bg.style.backgroundPosition = `${-window.scrollY * 0.5}px 0px`
-      }
-    }
     const bg = banner.current
-      window.addEventListener('scroll', scrollHandler)
+      window.addEventListener('scroll', () =>{
+        if(window.scrollY < 500)
+        bg.style.backgroundPosition = `${-window.scrollY * 0.5}px 0px`
+      })
 
       return () => {
-        window.removeEventListener('scroll', scrollHandler)
+        window.removeEventListener('scroll', () =>{
+          bg.style.backgroundPosition = `${-window.scrollY * 0.5}px 0px`
+        })
       }
   },[])
     return (
-      <main id="top" className="text-[#2D2D2D]">
-        
-        <div className="relative">
-          <Link href="#top" className="bg-white p-3 absolute bottom-4 right-4 border border-[#414141] bg-center bg-no-repeat">
-            <Image src="/images/up.png" height={20} width={20} alt="to top"></Image>
-          </Link>
+      <main className="text-[#2D2D2D]">
+        <div>
           <div
             style={{
-              backgroundImage: "url('./images/youmatter/hero.png')",
-              backgroundPosition: "center",
+              background: "url('./images/youtube/hero.png')",
+              backgroundSize: "105%",
               backgroundRepeat: "no-repeat",
             }}
-            className="lg:h-[30vw] md:h-[40vw] sm:h-[50vw] h-[70vw] aspect-auto custom-background-property bg-sm md:bg-md lg:bg-lg xl:bg-xl"
+            className="h-[27vw] bg-cover aspect-auto"
             ref={banner}
           ></div>
           <div className="bg-[#FAFAFA] " style={{}}>
-            <div className="max-w-[1280px] px-4 py-14  mx-auto ">
+            <div className="max-w-[1280px] px-4 py-16  mx-auto ">
               <div>
-                <p className="text-xl font-semibold  opacity-70">YOU MATTER</p>
+                <p className="text-xl font-bold  opacity-70">YOU MATTER</p>
                 <p className="text-4xl font-bold  mt-3">
                   Self Care and Productivity App
                 </p>
               </div>
-              <div className="flex gap-4 mt-16 w-full md:justify-between flex-wrap">
+              <div className="flex gap-5 mt-16 w-full justify-between">
                 <div>
                   <p className="text-xs font-bold opacity-70">TYPE</p>
                   <p className="font-semibold">Personal Project</p>
                 </div>
-                <div className="hidden sm:block w-[0.5px] border border-[#A2A2A2]"></div>
+                <div className="w-[1px] border border-[#A2A2A2]"></div>
                 <div>
                   <p className="text-xs font-bold opacity-70">ROLE</p>
                   <p className="font-semibold">Product Designer & Reseach</p>
                 </div>
-                <div className="hidden sm:block w-[0.5px] border border-[#A2A2A2]"></div>
-                <div className="mr-14">
+                <div className=" w-[1px] border border-[#A2A2A2]"></div>
+                <div className="w-[200px]">
                   <p className="text-xs font-bold opacity-70">DURATION</p>
                   <p className="font-semibold">6 Weeks</p>
                 </div>
@@ -103,7 +98,7 @@ function CaseStudy1() {
               </ol>
             </div>
             {/* Research  */}
-            <div className="my-14">
+            <div className="">
               <p className="text-[#67895E] text-xl font-bold mb-5">
                 Research 🔍
               </p>
@@ -229,7 +224,7 @@ function CaseStudy1() {
                   Insights from customer comments on apps in same niche-{" "}
                 </p>
                 <br></br>
-                <div className="flex flex-col lg:flex-wrap gap-3 lg:h-[470px] content-center items-center ">
+                <div className="flex flex-col lg:flex-wrap gap-3 lg:h-[550px] content-center ">
                   <Image
                     src={"/images/youmatter/review/review1.png"}
                     height={2100}
@@ -256,10 +251,11 @@ function CaseStudy1() {
                   ></Image>
                 </div>
                 {/* Pain points discovered */}
-                <div className="lg:my-0 my-14">
-                  <p className="text-[#67895E] text-xl font-bold mb-5">
+                <div>
+                  <p className="mt-6 font-semibold">
                     Pain Points Discovered 🧐
                   </p>
+                  <br></br>
                   <ul className="list-disc pl-5 flex flex-col gap-4">
                     <li>
                       People are still{" "}
@@ -289,106 +285,112 @@ function CaseStudy1() {
                       </span>
                     </li>
                   </ul>
-                </div>
-                {/* Goals */}
-
-                <div className="my-14">
-                  <p className="text-[#67895E] text-xl font-bold mb-5">
-                    Goals 🎯
-                  </p>
-                  <div className="flex flex-col md:flex-row gap-10">
-                    <div>
-                      <p className="mb-6 font-semibold">The app should be -</p>
-                      <ul className="list-disc pl-5 flex flex-col gap-4">
-                        <li>Functional and usable.</li>
-                        <li>
-                          Not the primary source of self-care content, for
-                          variety
-                        </li>
-                        <li>Have access to free content and basic features.</li>
-                        <li>Have access to professional therapists</li>
-                        <li>More personalization.</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <p className="mb-6 font-semibold">
-                        While using the app people should -
-                      </p>
-                      <ul className="list-disc pl-5 flex flex-col gap-4">
-                        <li>Functional and usable.</li>
-                        <li>
-                          Not the primary source of self-care content, for
-                          variety
-                        </li>
-                        <li>Have access to free content and basic features.</li>
-                        <li>Have access to professional therapists</li>
-                        <li>More personalization.</li>
-                      </ul>
+                  {/* Goals */}
+                  <div className="my-14">
+                    <p className="text-[#67895E] text-xl font-bold mb-5">
+                      Goals 🎯
+                    </p>
+                    <div className="flex flex-col md:flex-row gap-10">
+                      <div>
+                        <p className="my-6 font-semibold">
+                          The app should be -
+                        </p>
+                        <ul className="list-disc pl-5 flex flex-col gap-4">
+                          <li>Functional and usable.</li>
+                          <li>
+                            Not the primary source of self-care content, for
+                            variety
+                          </li>
+                          <li>
+                            Have access to free content and basic features.
+                          </li>
+                          <li>Have access to professional therapists</li>
+                          <li>More personalization.</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="my-6 font-semibold">
+                          While using the app people should -
+                        </p>
+                        <ul className="list-disc pl-5 flex flex-col gap-4">
+                          <li>Functional and usable.</li>
+                          <li>
+                            Not the primary source of self-care content, for
+                            variety
+                          </li>
+                          <li>
+                            Have access to free content and basic features.
+                          </li>
+                          <li>Have access to professional therapists</li>
+                          <li>More personalization.</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-                {/* Solving */}
-                <div className="my-14">
-                  <p className="text-[#67895E] text-xl font-bold mb-5">
-                    Now comes the exciting part- Solving 😎
-                  </p>
-                  <p className="my-4">
-                    I started with making a few{" "}
-                    <span className="font-semibold">assumptions</span> that
-                    helped me build a relevant product-
-                  </p>
-                  <ul className="list-disc pl-5 flex flex-col gap-4">
-                    <li>
-                      When the user adds an image to complete a certain task in
-                      his/her routine,{" "}
-                      <span className="font-semibold">
-                        assuming we will have image processing techniques for
-                        checking if the purpose of task and image matches.
-                      </span>
-                    </li>
-                    <li>
-                      Users will have two options to access the premium
-                      features, by purchasing the premium package or by
-                      collecting coins by joining in and completing weekly
-                      challenges. So{" "}
-                      <span className="font-semibold">
-                        assuming a user joins in a weekly challenge he/she will
-                        have to complete certain tasks
-                      </span>{" "}
-                      which will include to first make a commitment by posting
-                      about the challenge he/she is doing on any social media
-                      platform.{" "}
-                      <span className="font-semibold">
-                        This will help advertise the &quot;You Matter&quot; app.
-                      </span>
-                    </li>
-                    <li>
-                      <span className="font-semibold">
-                        Assuming &quot;You Matter&quot; will have a professional
-                        team
-                      </span>{" "}
-                      which will provide exclusive and specialized content,
-                      challenges, quizzes and courses related to the niche in
-                      premium package or users can use their coins (explained
-                      above)
-                    </li>
-                    <li>
-                      <span className="font-semibold">
-                        Assuming professional therapists will partner with our
-                        team{" "}
-                      </span>{" "}
-                      and provide their service to the users. (included in
-                      premium subscription/pay the therapist fee and specially
-                      for students- use coins to unlock).
-                    </li>
-                    <li>
-                      There will be a{" "}
-                      <span className="font-semibold">
-                        separate app for the therapists
-                      </span>
-                      partnered with our team.
-                    </li>
-                  </ul>
+                  {/* Solving */}
+                  <div>
+                    <p className="text-[#67895E] text-xl font-bold mb-5">
+                      Now comes the exciting part- Solving 😎
+                    </p>
+                    <p className="my-4">
+                      I started with making a few{" "}
+                      <span className="font-semibold">assumptions</span> that
+                      helped me build a relevant product-
+                    </p>
+                    <ul className="list-disc pl-5 flex flex-col gap-4">
+                      <li>
+                        When the user adds an image to complete a certain task
+                        in his/her routine,{" "}
+                        <span className="font-semibold">
+                          assuming we will have image processing techniques for
+                          checking if the purpose of task and image matches.
+                        </span>
+                      </li>
+                      <li>
+                        Users will have two options to access the premium
+                        features, by purchasing the premium package or by
+                        collecting coins by joining in and completing weekly
+                        challenges. So{" "}
+                        <span className="font-semibold">
+                          assuming a user joins in a weekly challenge he/she
+                          will have to complete certain tasks
+                        </span>
+                        which will include to first make a commitment by posting
+                        about the challenge he/she is doing on any social media
+                        platform.{" "}
+                        <span className="font-semibold">
+                          This will help advertise the &quot;You Matter&quot;
+                          app.
+                        </span>
+                      </li>
+                      <li>
+                        <span className="font-semibold">
+                          Assuming &quot;You Matter&quot; will have a
+                          professional team
+                        </span>{" "}
+                        which will provide exclusive and specialized content,
+                        challenges, quizzes and courses related to the niche in
+                        premium package or users can use their coins (explained
+                        above)
+                      </li>
+                      <li>
+                        <span className="font-semibold">
+                          Assuming professional therapists will partner with our
+                          team{" "}
+                        </span>{" "}
+                        and provide their service to the users. (included in
+                        premium subscription/pay the therapist fee and specially
+                        for students- use coins to unlock).
+                      </li>
+                      <li>
+                        There will be a{" "}
+                        <span className="font-semibold">
+                          separate app for the therapists
+                        </span>
+                        partnered with our team.
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -396,11 +398,7 @@ function CaseStudy1() {
           {/* Final Designs */}
           <div className="flex flex-col items-center my-7">
             <p className="font-bold py-3 text-xl">
-              Final Designs - (
-              <Link href="https://www.figma.com/proto/GTNfdyupy0CJQrSPOp2OIU/You-Matter?node-id=1-6&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A6&t=nSWzJOzjDO2rTy6Q-1&mode=design">
-                <span className="text-[#67895E]">click here </span>
-              </Link>
-              to interact with the prototype)
+              Final Designs - (click here to interact with the prototype)
             </p>
             <div className="max-w-[1280px] px-4 ">
               <video autoPlay loop muted className="w-full">
@@ -467,7 +465,7 @@ function CaseStudy1() {
                   Users were given the task of completing routines, editing
                   routines, going to journal page and talking with their therapy
                   pet.
-                </span>{" "}
+                </span>
                 As result, participants were able to complete all given tasks
                 with 100% accuracy, citing ease of use and instant familiarity
                 of user interface elements.
@@ -508,7 +506,7 @@ function CaseStudy1() {
                 routines and be consistent. I understood the needs of the users
                 through the survey and conversations. Finally, I faced the
                 challenge of creating an engaging app both from the user
-                experience perspective and the visual perspective.{" "}
+                experience perspective and the visual perspective.
                 <span className="font-bold">
                   And that’s a wrap. Thank you for reading!
                 </span>
@@ -534,4 +532,4 @@ function CaseStudy1() {
     );
 }
 
-export default CaseStudy1;
+export default Casestudy2;

@@ -27,6 +27,12 @@ module.exports = {
       },
       gridTemplateColumns:{
         'landing-grid':'repeat(3, 480px)', 
+      },
+      backgroundSize:{
+        'sm':'220% auto',
+        'md':'150% auto',
+        'lg':'120% auto',
+        'xl':'110% auto',
       }
     },
   },

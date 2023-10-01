@@ -81,7 +81,7 @@ function Work() {
                   >
                     <div className="flex justify-center items-center">
                       <Image
-                        src="/images/youmatter.png"
+                        src="/images/project/youmatter.png"
                         height={766}
                         width={864}
                         alt="project1"
@@ -127,7 +127,7 @@ function Work() {
                   >
                     <div className="flex justify-center items-center">
                       <Image
-                        src="/images/youtube.png"
+                        src="/images/project/youtube.png"
                         height={766}
                         width={864}
                         alt="project1"
@@ -150,7 +150,7 @@ function Work() {
                         with YouTube Learning.{" "}
                       </p>
 
-                      <Link href="#">
+                      <Link href="/youtube-redesigned">
                         <button className="py-3 px-5 border border-[#828282] flex gap-5 transition-all hover:gap-7 hover:underline  items-center">
                         <span className="pt-[2px]">
                             Read case study{" "}
@@ -174,7 +174,7 @@ function Work() {
                   >
                     <div className="flex justify-center items-center">
                       <Image
-                        src="/images/azent.png"
+                        src="/images/project/azent.png"
                         height={766}
                         width={864}
                         alt="project1"
@@ -219,7 +219,7 @@ function Work() {
           <div className="max-w-[1280px] mx-auto flex gap-[150px] justify-between items-center h-full top-1/2">
             <div className="flex justify-center items-center">
               <Image
-                src="/images/project1.png"
+                src="/images/project/project1.png"
                 height={766}
                 width={864}
                 alt="project1"
