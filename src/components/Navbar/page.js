@@ -29,7 +29,7 @@ function Navbar() {
     },[showNav])
     return (
       <nav className={"border-b w-full bg-white top-0 z-[1] fixed" + " " + `${showNav ? "translate-y-0 transition-all":"-translate-y-full transition-all"}`}>
-        <div className="mx-10">
+        <div className="mx-5">
           <div className="flex items-center">
             <Link className="flex items-center" href="/">
             <div>

@@ -1,535 +1,264 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-function Casestudy2() {
-  const banner = useRef(null)
+function CaseStudy2() {
+  const banner = useRef(null);
 
-  useEffect(()=>{
-    const bg = banner.current
-      window.addEventListener('scroll', () =>{
-        if(window.scrollY < 500)
-        bg.style.backgroundPosition = `${-window.scrollY * 0.5}px 0px`
-      })
-
-      return () => {
-        window.removeEventListener('scroll', () =>{
-          bg.style.backgroundPosition = `${-window.scrollY * 0.5}px 0px`
-        })
+  useEffect(() => {
+    function scrollHandler() {
+      if (window.scrollY >= 0) {
+        bg.style.backgroundPosition = `${-window.scrollY * 0.5}px 0px`;
       }
-  },[])
-    return (
-      <main className="text-[#2D2D2D]">
-        <div>
-          <div
-            style={{
-              background: "url('./images/youtube/hero.png')",
-              backgroundSize: "105%",
-              backgroundRepeat: "no-repeat",
-            }}
-            className="h-[27vw] bg-cover aspect-auto"
-            ref={banner}
-          ></div>
-          <div className="bg-[#FAFAFA] " style={{}}>
-            <div className="max-w-[1280px] px-4 py-16  mx-auto ">
-              <div>
-                <p className="text-xl font-bold  opacity-70">YOU MATTER</p>
-                <p className="text-4xl font-bold  mt-3">
-                  Self Care and Productivity App
-                </p>
-              </div>
-              <div className="flex gap-5 mt-16 w-full justify-between">
-                <div>
-                  <p className="text-xs font-bold opacity-70">TYPE</p>
-                  <p className="font-semibold">Personal Project</p>
-                </div>
-                <div className="w-[1px] border border-[#A2A2A2]"></div>
-                <div>
-                  <p className="text-xs font-bold opacity-70">ROLE</p>
-                  <p className="font-semibold">Product Designer & Reseach</p>
-                </div>
-                <div className=" w-[1px] border border-[#A2A2A2]"></div>
-                <div className="w-[200px]">
-                  <p className="text-xs font-bold opacity-70">DURATION</p>
-                  <p className="font-semibold">6 Weeks</p>
-                </div>
-              </div>
-            </div>
-            <div></div>
-          </div>
-          {/* Main Content */}
-          <div className="max-w-[1280px] px-4 mx-auto mt-10 font-epilogue text-[#2D2D2D] leading-7 text-lg">
-            {/* Introduction */}
+    }
+    const bg = banner.current;
+    window.addEventListener("scroll", scrollHandler);
+
+    return () => {
+      window.removeEventListener("scroll", scrollHandler);
+    };
+  }, []);
+  return (
+    <main id="top" className="text-[#2D2D2D] bg-white">
+      <div>
+        <div
+          style={{
+            backgroundImage: "url('./images/youtube/hero.png')",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+          className="lg:h-[30vw] md:h-[40vw] sm:h-[50vw] h-[70vw] aspect-auto custom-background-property bg-sm md:bg-md lg:bg-lg xl:bg-xl"
+          ref={banner}
+        ></div>
+        <div className="bg-[#FAFAFA] " style={{}}>
+          <div className="max-w-[1280px] px-4 py-14  mx-auto ">
             <div>
-              <p className="text-[#67895E] text-xl font-bold mb-5">
-                Introduction 📝
-              </p>
-              <p>
-                Self-care is a popular topic these days, but it is often poorly
-                explained. It is not synonymous with self-indulgence or being
-                selfish. Self care at the simplest level is making sure that you
-                are doing the things that you need to do in order to stay
-                healthy physically and mentally. Caring for yourself is an
-                active choice that you need to make everyday that prioritizes
-                your own health and happiness.
-              </p>
-              <p className="bg-[#FAFAFA] border-[#67895E] border-l-8 p-5 my-4">
-                “Self care is an attitude that says, I am responsible for
-                myself.”
-              </p>
-              <p>
-                That sounds simple, but most people struggle to incorporate self
-                care into their daily routines. With self-care being such a
-                prevalent and subjective topic, my goal was to better understand
-                how people approach self care and what challenges they face down
-                the road of self improvement.​
+              <p className="text-xl font-semibold  opacity-70">YOUTUBE REDESIGN</p>
+              <p className="text-4xl font-bold  mt-3">
+              Re-imagining How We Consume Educational Content on YouTube
               </p>
             </div>
-            {/* Identifying the problems */}
-            <div className="my-14">
-              <p className="text-[#67895E] text-xl font-bold mb-5">
-                Identifying the Problems 🤔
-              </p>
-              <ol className="list-decimal pl-5">
-                <li>Lack of motivation. </li>
-                <li>People get bored of using self care apps. </li>
-                <li>Too lazy to be consistent. </li>
-                <li>Time consuming & overwhelming.</li>
-              </ol>
-            </div>
-            {/* Research  */}
-            <div className="">
-              <p className="text-[#67895E] text-xl font-bold mb-5">
-                Research 🔍
-              </p>
-              <p>
-                I defined a series of questions and began researching the
-                problem. I conducted the{" "}
-                <span className="font-semibold">survey with 71 people</span> of
-                different age groups, and{" "}
-                <span className="font-semibold">
-                  had a 1 : 1 conversation with one of the people.
-                </span>{" "}
-                The questions I asked went like-
-              </p>
-              <br></br>
-              <ul className="list-disc pl-5 flex flex-col gap-4">
-                <li>
-                  Who are the users that are using self-care apps? What do they
-                  use for their self care? Do they know what self-care is, and
-                  what its benefits are? What are the current market trends?
-                </li>
-                <li>
-                  Who are the users that are using self-care apps? What do they
-                  use for their self care? Do they know what self-care is, and
-                  what its benefits are? What are the current market trends?
-                </li>
-                <li>
-                  What are the available apps out there? What apps do people
-                  like or dislike?
-                </li>
-                <li>
-                  What are their main goals in your journey of self care? What
-                  has been the major barrier in their road to self care?
-                </li>
-                <li>
-                  I also analyzed Customer comments on several apps to get a
-                  better understanding of what are other pain points in current
-                  apps.
-                </li>
-              </ul>
-              <p className="mt-6 font-semibold">Insights from the survey- </p>
-              <br></br>
-              <ul className="list-disc pl-5 flex flex-col gap-4">
-                <li>More than 50% of people were between the age of 21-30.</li>
-                <li>
-                  Number of females using self-care apps & practicing self-care
-                  in general were more than male.
-                </li>
-                <li>Almost 90% of the people were student.</li>
-                <li>
-                  More than 60% of the people were still unaware of the concept
-                  of self-care in their lives.
-                </li>
-                <li>
-                  Improve focus, fitness and mood tracking & coping with stress
-                  and anxiety were the top three goals among the people.
-                </li>
-                <li>
-                  Lack of motivation, unawareness about self-care & feeling
-                  regretful for failing at being consistent were the top three
-                  challenges that people face.
-                </li>
-              </ul>
-              <div className="grid grid-cols-1 sm:grid-cols-2 justify-items-center">
-                <Image
-                  src="/images/youmatter/piechart/piechart1.png"
-                  height={200}
-                  width={500}
-                  alt="piechart"
-                ></Image>
-                <Image
-                  src="/images/youmatter/piechart/piechart2.png"
-                  height={200}
-                  width={500}
-                  alt="piechart"
-                ></Image>
-                <Image
-                  src="/images/youmatter/piechart/piechart3.png"
-                  height={200}
-                  width={500}
-                  alt="piechart"
-                ></Image>
-                <Image
-                  src="/images/youmatter/piechart/piechart4.png"
-                  height={200}
-                  width={500}
-                  alt="piechart"
-                ></Image>
-              </div>
-              <div className="flex justify-center">
-                <Image
-                  src="/images/youmatter/barchart/barchart.png"
-                  height={200}
-                  width={900}
-                  alt="barchart"
-                ></Image>
-              </div>
+            <div className="flex gap-4 mt-16 w-full md:justify-between flex-wrap">
               <div>
-                <p className="mt-6 font-semibold">
-                  Insights from one-on-one calls{" "}
-                </p>
-                <br></br>
-                <ul className="list-disc pl-5 flex flex-col gap-4">
-                  <li>
-                    “Most of the apps provide very general experience. As
-                    everyone has their own different emotions, sufferings,
-                    mindset an app should offer a personalized experience.”
-                  </li>
-                  <li>
-                    “Sometimes I want someone to predict my mood and help me
-                    with it, an app will always be limited.”
-                  </li>
-                  <li>
-                    “Boring interfaces, makes harder to stay connected and
-                    motivated.”
-                  </li>
-                  <li>
-                    “Using the same app every time gets boring, people need
-                    different content, so they substitute paid apps with free
-                    resources.”
-                  </li>
-                </ul>
-                <p className="mt-6 font-semibold">
-                  Insights from customer comments on apps in same niche-{" "}
-                </p>
-                <br></br>
-                <div className="flex flex-col lg:flex-wrap gap-3 lg:h-[550px] content-center ">
-                  <Image
-                    src={"/images/youmatter/review/review1.png"}
-                    height={2100}
-                    width={400}
-                    alt="review"
-                  ></Image>
-                  <Image
-                    src={"/images/youmatter/review/review2.png"}
-                    height={200}
-                    width={400}
-                    alt="review"
-                  ></Image>
-                  <Image
-                    src={"/images/youmatter/review/review3.png"}
-                    height={200}
-                    width={400}
-                    alt="review"
-                  ></Image>
-                  <Image
-                    src={"/images/youmatter/review/review4.png"}
-                    height={200}
-                    width={400}
-                    alt="review"
-                  ></Image>
-                </div>
-                {/* Pain points discovered */}
-                <div>
-                  <p className="mt-6 font-semibold">
-                    Pain Points Discovered 🧐
-                  </p>
-                  <br></br>
-                  <ul className="list-disc pl-5 flex flex-col gap-4">
-                    <li>
-                      People are still{" "}
-                      <span className="font-semibold">unaware</span> about the
-                      concept of self-care.
-                    </li>
-                    <li>
-                      Motivation is often lost, due to{" "}
-                      <span className="font-semibold">lack of variety.</span>
-                    </li>
-                    <li>
-                      Most basic and good features are available only in{" "}
-                      <span className="font-semibold">premium packages.</span>{" "}
-                      As majority of users are students, they won&apos;t be
-                      quite willing to pay.
-                    </li>
-                    <li>
-                      Most apps provide a very{" "}
-                      <span className="font-semibold">general experience</span>{" "}
-                      to users.
-                    </li>
-                    <li>
-                      Often people can&apos;t realise if their mental health is
-                      declining and when should they{" "}
-                      <span className="font-semibold">
-                        consult a professional.
-                      </span>
-                    </li>
-                  </ul>
-                  {/* Goals */}
-                  <div className="my-14">
-                    <p className="text-[#67895E] text-xl font-bold mb-5">
-                      Goals 🎯
-                    </p>
-                    <div className="flex flex-col md:flex-row gap-10">
-                      <div>
-                        <p className="my-6 font-semibold">
-                          The app should be -
-                        </p>
-                        <ul className="list-disc pl-5 flex flex-col gap-4">
-                          <li>Functional and usable.</li>
-                          <li>
-                            Not the primary source of self-care content, for
-                            variety
-                          </li>
-                          <li>
-                            Have access to free content and basic features.
-                          </li>
-                          <li>Have access to professional therapists</li>
-                          <li>More personalization.</li>
-                        </ul>
-                      </div>
-                      <div>
-                        <p className="my-6 font-semibold">
-                          While using the app people should -
-                        </p>
-                        <ul className="list-disc pl-5 flex flex-col gap-4">
-                          <li>Functional and usable.</li>
-                          <li>
-                            Not the primary source of self-care content, for
-                            variety
-                          </li>
-                          <li>
-                            Have access to free content and basic features.
-                          </li>
-                          <li>Have access to professional therapists</li>
-                          <li>More personalization.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  {/* Solving */}
-                  <div>
-                    <p className="text-[#67895E] text-xl font-bold mb-5">
-                      Now comes the exciting part- Solving 😎
-                    </p>
-                    <p className="my-4">
-                      I started with making a few{" "}
-                      <span className="font-semibold">assumptions</span> that
-                      helped me build a relevant product-
-                    </p>
-                    <ul className="list-disc pl-5 flex flex-col gap-4">
-                      <li>
-                        When the user adds an image to complete a certain task
-                        in his/her routine,{" "}
-                        <span className="font-semibold">
-                          assuming we will have image processing techniques for
-                          checking if the purpose of task and image matches.
-                        </span>
-                      </li>
-                      <li>
-                        Users will have two options to access the premium
-                        features, by purchasing the premium package or by
-                        collecting coins by joining in and completing weekly
-                        challenges. So{" "}
-                        <span className="font-semibold">
-                          assuming a user joins in a weekly challenge he/she
-                          will have to complete certain tasks
-                        </span>
-                        which will include to first make a commitment by posting
-                        about the challenge he/she is doing on any social media
-                        platform.{" "}
-                        <span className="font-semibold">
-                          This will help advertise the &quot;You Matter&quot;
-                          app.
-                        </span>
-                      </li>
-                      <li>
-                        <span className="font-semibold">
-                          Assuming &quot;You Matter&quot; will have a
-                          professional team
-                        </span>{" "}
-                        which will provide exclusive and specialized content,
-                        challenges, quizzes and courses related to the niche in
-                        premium package or users can use their coins (explained
-                        above)
-                      </li>
-                      <li>
-                        <span className="font-semibold">
-                          Assuming professional therapists will partner with our
-                          team{" "}
-                        </span>{" "}
-                        and provide their service to the users. (included in
-                        premium subscription/pay the therapist fee and specially
-                        for students- use coins to unlock).
-                      </li>
-                      <li>
-                        There will be a{" "}
-                        <span className="font-semibold">
-                          separate app for the therapists
-                        </span>
-                        partnered with our team.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                <p className="text-xs font-bold opacity-70">TYPE</p>
+                <p className="font-semibold">Personal Project</p>
+              </div>
+              <div className="hidden sm:block w-[0.5px] border border-[#A2A2A2]"></div>
+              <div>
+                <p className="text-xs font-bold opacity-70">ROLE</p>
+                <p className="font-semibold">Product Designer & Reseach</p>
+              </div>
+              <div className="hidden sm:block w-[0.5px] border border-[#A2A2A2]"></div>
+              <div className="mr-14">
+                <p className="text-xs font-bold opacity-70">DURATION</p>
+                <p className="font-semibold">2 Weeks</p>
               </div>
             </div>
           </div>
-          {/* Final Designs */}
-          <div className="flex flex-col items-center my-7">
-            <p className="font-bold py-3 text-xl">
-              Final Designs - (click here to interact with the prototype)
+          <div></div>
+        </div>
+        {/* Main Content */}
+        <div className="max-w-[1280px] px-4 mx-auto mt-10 font-epilogue text-[#2D2D2D] leading-7 text-lg">
+          {/* Introduction */}
+          <div>
+            <p className="text-[#CA3D41] text-xl font-bold mb-5">
+              Introduction 📝
             </p>
-            <div className="max-w-[1280px] px-4 ">
-              <video autoPlay loop muted className="w-full">
-                <source src="/images/youmatter/design/1.mp4" type="video/mp4" />
-              </video>
-              <video autoPlay loop muted className="w-full">
-                <source src="/images/youmatter/design/2.mp4" type="video/mp4" />
-              </video>
-
-              <Image
-                src="/images/youmatter/design/3.png"
-                height={900}
-                width={1500}
-                alt="design"
-              ></Image>
-              <video autoPlay loop muted className="w-full">
-                <source src="/images/youmatter/design/4.mp4" type="video/mp4" />
-              </video>
-              <Image
-                src="/images/youmatter/design/5.png"
-                height={900}
-                width={1500}
-                alt="design"
-              ></Image>
-              <Image
-                src="/images/youmatter/design/6.png"
-                height={900}
-                width={1500}
-                alt="design"
-              ></Image>
-              <Image
-                src="/images/youmatter/design/7.png"
-                height={900}
-                width={1500}
-                alt="design"
-              ></Image>
-              <Image
-                src="/images/youmatter/design/8.png"
-                height={900}
-                width={1500}
-                alt="design"
-              ></Image>
-              <Image
-                src="/images/youmatter/design/9.png"
-                height={900}
-                width={1500}
-                alt="design"
-              ></Image>
-            </div>
-            <div></div>
-          </div>
-
-          <div className="max-w-[1280px] mx-auto p-4 mt-10 font-epilogue text-[#2D2D2D] leading-7 text-lg">
-            {/* Testing the prototype */}
-            <div>
-              <p className="text-[#67895E] text-xl font-bold mb-5">
-                Testing The Prototype 📱
-              </p>
-              <p>
-                All the work up to this point boils down to this moment. The
-                moment of truth! I ultimately wanted users to be able to
-                accomplish tasks give to them during the usability testing.{" "}
-                <span className="font-bold">
-                  Users were given the task of completing routines, editing
-                  routines, going to journal page and talking with their therapy
-                  pet.
-                </span>
-                As result, participants were able to complete all given tasks
-                with 100% accuracy, citing ease of use and instant familiarity
-                of user interface elements.
-              </p>
-              <p className="mt-4 font-semibold">Feedback from participants-</p>
+            <p>
+              For hundreds of millions of people around the world, YouTube and
+              dozens of other free video platforms are shaping up to be a new
+              educational model. Schools and universities are integrating free
+              video platforms like YouTube into their classrooms.{" "}
+              <span className="font-semibold">
+                So basically, the project focuses on the user experience YouTube
+                is providing for educational purposes, and trying to combine the
+                features from other educational platforms with YouTube Learning.
+              </span>
               <br></br>
-              <ul className="list-disc pl-5 flex flex-col gap-4">
-                <li>
-                  &quot;The app is fun to use. I liked how dynamic and
-                  interactive it is. The pet feature is so cool that it makes
-                  you stick to the app. Overall loved it, although i would like
-                  to see more pet options.&quot;{" "}
-                </li>
-                <li>
-                  &quot;It&apos;s a very helpful app for someone with poor
-                  mental health. It gives u the sense of purpose with the pet
-                  feature and it helps you be consistent with your daily
-                  plan&quot;
-                </li>
-                <li>
-                  &quot;I really liked how this app provides relevant free
-                  resources. There is also an alternative to buying premium
-                  package, by completing challenges and collecting coins, that
-                  makes the app much more affordable and user base would
-                  increase.&quot;
-                </li>
-              </ul>
-            </div>
-            {/* Conclusion */}
-            <div>
-              <p className="text-[#67895E] text-xl font-bold mt-10">
-                Conclusion 👩🏻‍💻
-              </p>
-              <p className="my-5">
-                Designing the app has been a challenging and rewarding journey.
-                It was clear from the onset that the major challenge will be to
-                make users feel warmth and stay motivated to complete their
-                routines and be consistent. I understood the needs of the users
-                through the survey and conversations. Finally, I faced the
-                challenge of creating an engaging app both from the user
-                experience perspective and the visual perspective.
-                <span className="font-bold">
-                  And that’s a wrap. Thank you for reading!
-                </span>
-              </p>
-            </div>
-            {/* case study navigation */}
-            <div className="py-28 flex">
-              <Link className="ml-auto" href="/youtube-Redesigned">
-                <button className="py-3 px-5 border border-[#828282] flex gap-5 transition-all hover:gap-7 hover:underline items-center">
-                  <span className="pt-[2px]">Next Project </span>
-                  <Image
-                    src="/images/right.png"
-                    height={16}
-                    width={16}
-                    alt="right arrow"
-                  ></Image>
-                </button>
-              </Link>
-            </div>
+              <br></br>
+              The ease-of-access and flexibility of YouTube is allowing amateur
+              and professional content developers to develop instructional
+              content to a global audience on almost any conceivable topic, from
+              knitting, to drawing, to photography, to hair and makeup, cooking
+              and gaming.<br></br>
+              <br></br>
+              <i className="font-semibold">
+                Disclaimer: I am not affiliated with YouTube in any way.
+                (Personal project)
+              </i>
+            </p>
+          </div>
+          {/* Identifying the problems */}
+          <div className="my-14">
+            <p className="text-[#CA3D41] text-xl font-bold mb-5">
+              Identifying the Problems 🤔
+            </p>
+            <p className="mb-5 font-semibold">Assumptions- </p>
+            <ol className="list-decimal pl-5">
+              <li>
+                The playlist feature is just not enough to integrate content as
+                a course.
+              </li>
+              <li>Can’t continue from where I left off in the course. </li>
+              <li>Can’t track the progress in the course. </li>
+              <li>
+                There is no special section dedicated for courses which makes it
+                harder to discover.
+              </li>
+            </ol>
+          </div>
+          {/* Research  */}
+          <div className="my-14">
+            <p className="text-[#CA3D41] text-xl font-bold mb-5">Research 🔍</p>
+            <p>
+              I prepared a survey with Google Forms and distributed it among
+              multiple groups of people. The purpose was to determine the basic
+              ‘pain-points’ of users when it comes to watching educational
+              videos. Learning about the problems of potential users is a great
+              way to be inspired and motivated. Working with real world data is
+              a good staring point to help avoid guesswork and preconceptions.{" "}
+              <br></br>
+              <span className="font-semibold">
+                I conducted the survey with 50 people
+              </span>
+            </p>
+            <br></br>
+            <Image
+              src="/images/youtube/chart.png"
+              height={1017}
+              width={1440}
+              alt="chart"
+            ></Image>
+            <p className="mt-6 font-semibold">
+              Data from this research to validate the assumptions -{" "}
+            </p>
+            <br></br>
+            <ul className="list-disc pl-5 flex flex-col gap-4">
+              <li>80% of people used YouTube to learn something new.</li>
+              <li>
+                About 60% of people found it hard to track their progress in the
+                course and felt the learning experience could be much better on
+                YouTube.
+              </li>
+            </ul>
+            <p className="mt-6 font-semibold">
+              Quotes directly from YouTube users -{" "}
+            </p>
+            <Image
+              src="/images/youtube/reviews.png"
+              height={1017}
+              width={1440}
+              alt="chart"
+            ></Image>
+          </div>
+          {/*Pain points */}
+          <div className="my-14">
+            <p className="text-[#CA3D41] text-xl font-bold mb-5">
+              NEW Pain Points Discovered 🧐
+            </p>
+            <ul className="list-disc pl-5 flex flex-col gap-4">
+              <li>Unable to connect to the creator for doubts. </li>
+              <li>The UI distracts the user while watching a course.</li>
+              <li>
+                Notes and materials provided by the creator are hard to reach in
+                the description section.
+              </li>
+            </ul>
+          </div>
+          {/* Ideation */}
+          <div className="my-14">
+            <p className="text-[#CA3D41] text-xl font-bold mb-5">Ideation 💡</p>
+            <p>
+              Instead of focusing on what the problem is or what the users want,
+              I ask myself why they need it. By understanding why people might
+              want this app it increased my chances of making a truly valuable
+              product.
+            </p>
+            <p className="my-4 font-semibold">Storyboard </p>
+            <p className="mb-4">
+              A storyboard is a great instrument for ideation. It’s an effective
+              and inexpensive way to capture, relate, and explore the app in a
+              real world setting. The story below describes Eve’s experience
+              with the app.
+            </p>
+            <Image
+              src="/images/youtube/storyboard.png"
+              height={900}
+              width={1500}
+              alt="chart"
+            ></Image>
+            <p className="my-4 font-semibold">Storyboard </p>
+            <p className="mb-4">
+              A storyboard is a great instrument for ideation. It’s an effective
+              and inexpensive way to capture, relate, and explore the app in a
+              real world setting. The story below describes Eve’s experience
+              with the app.
+            </p>
+            <Image
+              src="/images/youtube/flowchart.png"
+              height={900}
+              width={1500}
+              alt="chart"
+            ></Image>
           </div>
         </div>
-      </main>
-    );
+
+        {/* Final Designs */}
+        <div className="flex flex-col items-center my-7">
+          <p className="font-bold p-4 text-xl">
+            Final Designs - (
+            <Link href="https://www.figma.com/proto/EDjUFfurwOLMZxWzGrx7pR/Youtube-desk?type=design&node-id=62-94&t=VG5FwgjEX7Ti6Cwy-1&scaling=contain&page-id=0%3A1&starting-point-node-id=62%3A94&mode=design">
+              <span className="text-[#CA3D41]">click here </span>
+            </Link>
+            to interact with the prototype)
+          </p>
+          <div className="max-w-[1280px] px-4 ">
+            <Image
+              src="/images/youtube/design.png"
+              height={900}
+              width={1500}
+              alt="design"
+            ></Image>
+          </div>
+          <div></div>
+        </div>
+
+        {/* case study navigation */}
+        <div className="flex w-full">
+          <Link
+            className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282]"
+            href="/you-matter"
+          >
+            <button className="flex gap-5 transition-all hover:gap-7 hover:underline items-center w-fit">
+              {/* hover:gap-7 hover:underline */}
+              <Image
+              className="rotate-180"
+                src="/images/right.svg"
+                height={16}
+                width={16}
+                alt="right arrow"
+              ></Image>
+              <span className="pt-[2px]">Previous Project </span>
+            </button>
+          </Link>
+          <Link
+            className="flex justify-center w-1/2 py-5 px-5 border-t border-[#828282]"
+            href="/azent"
+          >
+            <button className=" flex gap-5 transition-all hover:gap-7 hover:underline items-center w-fit">
+              <span className="pt-[2px]">Next Project </span>
+              <Image
+                src="/images/right.svg"
+                height={16}
+                width={16}
+                alt="right arrow"
+              ></Image>
+            </button>
+          </Link>
+        </div>
+      </div>
+    </main>
+  );
 }
 
-export default Casestudy2;
+export default CaseStudy2;

@@ -1,16 +1,16 @@
 import Image from "next/image";
 function About() {
     return (
-      <main className="flex justify-center">
-        <div className="max-w-[1440px] mx-auto bg-[#FAFAFA] h-screen pt-16 flex font-epilogue">
-          <div className="w-1/2 relative border-l flex items-center justify-center ">
-            <Image  className="py-16 px-20" src="/images/about.png" fill objectFit="contain" alt="about"/>
+      <main className="flex justify-center bg-white">
+        <div className="max-w-[1440px] mx-auto bg-[#FAFAFA] min-h-screen pt-16 flex flex-col lg:flex-row font-epilogue">
+          <div className="lg:w-1/2 h-[60vh] w-full lg:h-auto relative flex items-center justify-center border-l">
+            <Image  className="p-0 lg:py-16 lg:px-20 px-4 py-4" src="/images/about.png" fill objectFit="contain" alt="about"/>
           </div>
-          <div className="w-1/2 py-16 px-20 border">
+          <div className="lg:w-1/2  lg:py-16 lg:px-20 px-4 py-4 border-r border-l">
             <p className="font-semibold xl:text-2xl">
                 A little bit about myself
             </p>
-            <p className="mt-4 text-[#2D2D2D] leading-7 ">
+            <p className="mt-4 leading-7 ">
               My name, Twisha, carries the beautiful meaning of &quot;divine aura&quot;.
               My journey as a UX designer has been quite an interesting one.
               While my academic background is rooted in computer science, I

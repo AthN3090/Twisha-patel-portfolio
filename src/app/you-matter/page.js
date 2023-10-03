@@ -20,7 +20,7 @@ function CaseStudy1() {
       }
   },[])
     return (
-      <main id="top" className="text-[#2D2D2D]">
+      <main id="top" className="text-[#2D2D2D] bg-white">
         <div>
           <div
             style={{
@@ -399,10 +399,10 @@ function CaseStudy1() {
               to interact with the prototype)
             </p>
             <div className="max-w-[1280px] px-4 ">
-              <video autoPlay loop muted className="w-full">
+              <video playsinline autoPlay loop muted className="w-full">
                 <source src="/images/youmatter/design/1.mp4" type="video/mp4" />
               </video>
-              <video autoPlay loop muted className="w-full">
+              <video playsinline autoPlay loop muted className="w-full">
                 <source src="/images/youmatter/design/2.mp4" type="video/mp4" />
               </video>
 
@@ -412,7 +412,7 @@ function CaseStudy1() {
                 width={1500}
                 alt="design"
               ></Image>
-              <video autoPlay loop muted className="w-full">
+              <video playsinline autoPlay loop muted className="w-full">
                 <source src="/images/youmatter/design/4.mp4" type="video/mp4" />
               </video>
               <Image
@@ -449,7 +449,7 @@ function CaseStudy1() {
             <div></div>
           </div>
 
-          <div className="max-w-[1280px] mx-auto p-4 mt-10 font-epilogue text-[#2D2D2D] leading-7 text-lg">
+          <div className="max-w-[1280px] mx-auto p-4 mt-10 font-epilogue text-[#2D2D2D] leading-7 text-lg relative">
             {/* Testing the prototype */}
             <div>
               <p className="text-[#67895E] text-xl font-bold mb-5">
@@ -493,7 +493,7 @@ function CaseStudy1() {
               </ul>
             </div>
             {/* Conclusion */}
-            <div className="relative">
+            <div className="mb-12">
               <p className="text-[#67895E] text-xl font-bold mt-10">
                 Conclusion 👩🏻‍💻
               </p>
@@ -509,20 +509,34 @@ function CaseStudy1() {
                   And that’s a wrap. Thank you for reading!
                 </span>
               </p>
-              <Link
+              
+            </div>
+            <Link
                 href="#top"
-                className="bg-white p-3 absolute right-0 border border-[#414141] bg-center bg-no-repeat"
+                className="bg-white p-3 absolute right-4 bottom-4 border border-[#414141] bg-center bg-no-repeat"
               ><Image
                   src="/images/up.svg"
                   height={20}
                   width={20}
                   alt="to top"
                 ></Image></Link>
-            </div>
-            {/* case study navigation */}
-            <div className="py-28 flex">
-              <Link className="ml-auto" href="/youtube-Redesigned">
-                <button className="py-3 px-5 border border-[#828282] flex gap-5 transition-all hover:gap-7 hover:underline items-center">
+          </div>
+        {/* case study navigation */}
+        <div className="flex w-full">
+              <Link className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282] text-[#E7E7E7]" href="/youtube-Redesigned">
+                <button className="flex gap-5 transition-all  items-center w-fit">
+                  {/* hover:gap-7 hover:underline */}
+                  <Image
+                    src="/images/gray-left.svg"
+                    height={16}
+                    width={16}
+                    alt="right arrow"
+                  ></Image>
+                  <span className="pt-[2px]">Previous Project </span>
+                </button>
+              </Link>
+              <Link className="flex justify-center w-1/2 py-5 px-5 border-t border-[#828282]" href="/youtube-redesigned">
+                <button className=" flex gap-5 transition-all hover:gap-7 hover:underline items-center w-fit">
                   <span className="pt-[2px]">Next Project </span>
                   <Image
                     src="/images/right.svg"
@@ -533,7 +547,6 @@ function CaseStudy1() {
                 </button>
               </Link>
             </div>
-          </div>
         </div>
       </main>
     );

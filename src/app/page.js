@@ -55,9 +55,9 @@ export default function Home() {
         </div> */}
           </div>
         </div>
-        <div className="h-[350px] bg-ux bg-no-repeat bg-[length:100%] w-full aspect-[16/9]">
-          <div className="flex flex-col justify-center gap-4 items-center relative top-1/2 -translate-y-1/2 max-w-[1024px] mx-auto text-center">
-            <p className="text-[#FEFEFE] text-2xl">
+        <div className="h-[250px] bg-ux bg-no-repeat bg-[length:100%_100%] w-full flex items-center">
+          <div className="flex flex-col justify-center gap-4 items-center relative max-w-[1024px] mx-auto text-center aspect-video">
+            <p className="text-[#FEFEFE] text-xl md:text-2xl px-4">
               Design is really an act of communication, which means having a
               deep understanding of the person with whom the designer is
               communicating.

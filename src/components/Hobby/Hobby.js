@@ -57,8 +57,8 @@ function Hobby() {
             </div>
           </div>
           {/* grid of hobbies */}
-          <div className="grid grid-cols-2 h-fit gap-very-thin bg-[#565656]">
-            <div className="p-[3vw] h-fit bg-[#242424] group">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-very-thin  h-fit bg-[#565656]">
+            <div className="p-[3vw] bg-[#242424] group">
               <div className="relative">
                 <Image
                   src="/images/hobby/hobby1.png"
@@ -69,9 +69,9 @@ function Hobby() {
 
                 <div className="group-hover:opacity-100 opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
                   <div className="font-epilogue p-10 absolute bottom-0 left-0">
-                    <p className="text-4xl text-white mb-5">Sketches and Painting</p>
+                    <p className="text-2xl md:text-4xl text-white mb-5">Sketches and Painting</p>
                     <Link href="/Illustrations">
-                      <button className="py-3 px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
+                      <button className="px-3 py-2 md:py-3 md:px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                         <span className="pt-[2px]">View Artwork </span>
                         <Image
                           src="/images/right.svg"
@@ -85,7 +85,7 @@ function Hobby() {
                 </div>
               </div>
             </div>
-            <div className="p-[3vw] h-fit bg-[#242424] group">
+            <div className="p-[3vw] bg-[#242424] group">
               <div className="relative">
                 <Image
                   src="/images/hobby/hobby2.png"
@@ -96,9 +96,9 @@ function Hobby() {
 
                 <div className="group-hover:opacity-100 opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
                   <div className="font-epilogue p-10 absolute bottom-0 left-0">
-                    <p className="text-4xl text-white mb-5">Potrait Illustrations</p>
+                    <p className="text-2xl md:text-4xl text-white mb-5">Potrait Illustrations</p>
                     <Link href="/illustrations">
-                      <button className="py-3 px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
+                      <button className="px-3 py-2 md:py-3 md:px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                         <span className="pt-[2px]">View Illustrations </span>
                         <Image
                           src="/images/right.svg"
@@ -112,7 +112,7 @@ function Hobby() {
                 </div>
               </div>
             </div>
-            <div className="p-[3vw] h-fit bg-[#242424] group">
+            <div className="p-[3vw] bg-[#242424] group">
               <div className="relative">
                 <Image
                   src="/images/hobby/hobby3.png"
@@ -123,9 +123,9 @@ function Hobby() {
 
                 <div className="group-hover:opacity-100 opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
                   <div className="font-epilogue p-10 absolute bottom-0 left-0">
-                    <p className="text-4xl text-white mb-5">Logo and Diary Designs</p>
+                    <p className="text-2xl md:text-4xl text-white mb-5">Logo and Diary Designs</p>
                     <Link href="/Illustrations">
-                      <button className="py-3 px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
+                      <button className="px-3 py-2 md:py-3 md:px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                         <span className="pt-[2px]">View Designs </span>
                         <Image
                           src="/images/right.svg"
@@ -139,7 +139,7 @@ function Hobby() {
                 </div>
               </div>
             </div>
-            <div className="p-[3vw] h-fit bg-[#242424] group">
+            <div className="p-[3vw] bg-[#242424] group">
               <div className="relative">
                 <Image
                   src="/images/hobby/hobby4.png"
@@ -150,9 +150,9 @@ function Hobby() {
 
                 <div className="group-hover:opacity-100 opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
                   <div className="font-epilogue p-10 absolute bottom-0 left-0">
-                    <p className="text-4xl text-white mb-5">Hand Sewing</p>
+                    <p className="text-2xl md:text-4xl text-white mb-5">Hand Sewing</p>
                     <Link href="/Illustrations">
-                      <button className="py-3 px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
+                      <button className="px-3 py-2 md:py-3 md:px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                         <span className="pt-[2px]">View Sewed clothes </span>
                         <Image
                           src="/images/right.svg"

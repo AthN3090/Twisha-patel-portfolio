@@ -2,14 +2,14 @@ import Image from "next/image";
 function Footer() {
     return (
       <footer className="bg-[#2D2D2D] text-white">
-        <div className="flex justify-between p-8 align-middle">
-          <div>
-            <p>
+        <div className="flex md:flex-row flex-col justify-between p-8 align-middle">
+          <div className="flex justify-center">
+            <p className="leading-[52px]">
               Designed by <span className="font-semibold">Twisha Patel✨</span>{" "}
               - Copyright 2023
             </p>
           </div>
-          <div className="flex gap-7">
+          <div className="flex gap-7 justify-center p-3">
             <a href="#">
               <Image
                 src="/images/mail.png"
