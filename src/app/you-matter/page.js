@@ -399,10 +399,10 @@ function CaseStudy1() {
               to interact with the prototype)
             </p>
             <div className="max-w-[1280px] px-4 ">
-              <video playsinline autoPlay loop muted className="w-full">
+              <video playsInline autoPlay loop muted className="w-full">
                 <source src="/images/youmatter/design/1.mp4" type="video/mp4" />
               </video>
-              <video playsinline autoPlay loop muted className="w-full">
+              <video playsInline autoPlay loop muted className="w-full">
                 <source src="/images/youmatter/design/2.mp4" type="video/mp4" />
               </video>
 
@@ -412,7 +412,7 @@ function CaseStudy1() {
                 width={1500}
                 alt="design"
               ></Image>
-              <video playsinline autoPlay loop muted className="w-full">
+              <video playsInline autoPlay loop muted className="w-full">
                 <source src="/images/youmatter/design/4.mp4" type="video/mp4" />
               </video>
               <Image
