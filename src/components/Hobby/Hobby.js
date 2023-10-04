@@ -6,10 +6,10 @@ function Hobby() {
         <div className="py-10 text-white  font-semibold text-4xl text-center border-b border-[#565656]">
           Hobby Projects
         </div>
-        <div className="flex justify-between min-h-screen">
+        <div className="flex justify-between">
           {/* sidebar 1 */}
-          <div className="w-[240px] border-r border-[#565656] relative overflow-hidden">
-            <div className="flex flex-col items-center left-1/2 -translate-x-1/2 gap-32 text-white py-10 absolute text-8xl mx-auto">
+          <div className="w-[240px] border-r border-[#565656] relative overflow-hidden sm:block hidden">
+            <div className="flex flex-col items-center left-1/2 -translate-x-1/2 md:gap-32 gap-36 text-white py-10 absolute text-6xl md:text-8xl mx-auto">
               <p
                 className=" rotate-180 relative"
                 style={{
@@ -67,8 +67,8 @@ function Hobby() {
                   alt="hobby"
                 />
 
-                <div className="group-hover:opacity-100 opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
-                  <div className="font-epilogue p-10 absolute bottom-0 left-0">
+                <div className="sm:group-hover:opacity-100 sm:opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
+                  <div className="font-epilogue sm:p-10 p-5  absolute bottom-0 left-0">
                     <p className="text-2xl md:text-4xl text-white mb-5">Sketches and Painting</p>
                     <Link href="/Illustrations">
                       <button className="px-3 py-2 md:py-3 md:px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
@@ -94,8 +94,8 @@ function Hobby() {
                   alt="hobby"
                 />
 
-                <div className="group-hover:opacity-100 opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
-                  <div className="font-epilogue p-10 absolute bottom-0 left-0">
+                <div className="sm:group-hover:opacity-100 sm:opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
+                  <div className="font-epilogue sm:p-10 p-5  absolute bottom-0 left-0">
                     <p className="text-2xl md:text-4xl text-white mb-5">Potrait Illustrations</p>
                     <Link href="/illustrations">
                       <button className="px-3 py-2 md:py-3 md:px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
@@ -121,8 +121,8 @@ function Hobby() {
                   alt="hobby"
                 />
 
-                <div className="group-hover:opacity-100 opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
-                  <div className="font-epilogue p-10 absolute bottom-0 left-0">
+                <div className="sm:group-hover:opacity-100 sm:opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
+                  <div className="font-epilogue sm:p-10 p-5  absolute bottom-0 left-0">
                     <p className="text-2xl md:text-4xl text-white mb-5">Logo and Diary Designs</p>
                     <Link href="/Illustrations">
                       <button className="px-3 py-2 md:py-3 md:px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
@@ -148,8 +148,8 @@ function Hobby() {
                   alt="hobby"
                 />
 
-                <div className="group-hover:opacity-100 opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
-                  <div className="font-epilogue p-10 absolute bottom-0 left-0">
+                <div className="sm:group-hover:opacity-100 sm:opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
+                  <div className="font-epilogue sm:p-10 p-5 absolute bottom-0 left-0">
                     <p className="text-2xl md:text-4xl text-white mb-5">Hand Sewing</p>
                     <Link href="/Illustrations">
                       <button className="px-3 py-2 md:py-3 md:px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
@@ -170,8 +170,8 @@ function Hobby() {
             
           </div>
           {/* sidebar 2 */}
-          <div className="w-[240px] border-l border-[#565656] relative overflow-hidden">
-            <div className="flex flex-col items-center left-1/2 -translate-x-1/2 gap-32 text-white py-10 absolute text-8xl mx-auto">
+          <div className="w-[240px] border-l border-[#565656] relative overflow-hidden sm:block hidden">
+            <div className="flex flex-col items-center left-1/2 -translate-x-1/2 md:gap-32 gap-36 text-white py-10 absolute text-6xl md:text-8xl mx-auto">
               <p
                 className="rotate-180 relative"
                 style={{

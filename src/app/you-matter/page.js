@@ -9,7 +9,7 @@ function CaseStudy1() {
 
     function scrollHandler(){
       if(window.scrollY >= 0){
-        bg.style.backgroundPosition = `${-window.scrollY * 0.5}px 0px`
+        bg.style.backgroundPosition = `${-window.scrollY * 0.3}px`
       }
     }
     const bg = banner.current
@@ -25,7 +25,7 @@ function CaseStudy1() {
           <div
             style={{
               backgroundImage: "url('./images/youmatter/hero.png')",
-              backgroundPosition: "center",
+              backgroundPosition: "left",
               backgroundRepeat: "no-repeat",
             }}
             className="lg:h-[30vw] md:h-[40vw] sm:h-[50vw] h-[70vw] aspect-auto custom-background-property bg-sm md:bg-md lg:bg-lg xl:bg-xl"
@@ -511,19 +511,22 @@ function CaseStudy1() {
               </p>
               
             </div>
-            <Link
-                href="#top"
-                className="bg-white p-3 absolute right-4 bottom-4 border border-[#414141] bg-center bg-no-repeat"
-              ><Image
+            <div className="flex justify-center">
+            <div className="my-7 border border-[#414141] w-fit p-3">
+              <Link href="#top" className="bg-white ">
+                <Image
                   src="/images/up.svg"
                   height={20}
                   width={20}
                   alt="to top"
-                ></Image></Link>
+                ></Image>
+              </Link>
+            </div>
+          </div>
           </div>
         {/* case study navigation */}
         <div className="flex w-full">
-              <Link className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282] text-[#E7E7E7]" href="/youtube-Redesigned">
+              <Link className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282] text-[#E7E7E7]" href="#">
                 <button className="flex gap-5 transition-all  items-center w-fit">
                   {/* hover:gap-7 hover:underline */}
                   <Image
