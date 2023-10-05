@@ -58,7 +58,7 @@ function Hobby() {
           </div>
           {/* grid of hobbies */}
           <div className="grid md:grid-cols-2 grid-cols-1 gap-very-thin  h-fit bg-[#565656]">
-            <div className="p-[3vw] bg-[#242424] group">
+            <div className="p-5 sm:p-[3vw] bg-[#242424] group">
               <div className="relative">
                 <Image
                   src="/images/hobby/hobby1.png"
@@ -85,7 +85,7 @@ function Hobby() {
                 </div>
               </div>
             </div>
-            <div className="p-[3vw] bg-[#242424] group">
+            <div className="p-5 sm:p-[3vw] bg-[#242424] group">
               <div className="relative">
                 <Image
                   src="/images/hobby/hobby2.png"
@@ -112,7 +112,7 @@ function Hobby() {
                 </div>
               </div>
             </div>
-            <div className="p-[3vw] bg-[#242424] group">
+            <div className="p-5 sm:p-[3vw] bg-[#242424] group">
               <div className="relative">
                 <Image
                   src="/images/hobby/hobby3.png"
@@ -139,7 +139,7 @@ function Hobby() {
                 </div>
               </div>
             </div>
-            <div className="p-[3vw] bg-[#242424] group">
+            <div className="p-5 sm:p-[3vw] bg-[#242424] group">
               <div className="relative">
                 <Image
                   src="/images/hobby/hobby4.png"
