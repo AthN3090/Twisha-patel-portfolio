@@ -73,23 +73,23 @@ function Navbar() {
               />
               </div>
               <ul className="flex flex-col items-center justify-center font-epilogue  pt-1 gap-[80px]">
-                <li className="px-5 py-3">
+                <li className="px-5 py-3" onClick={() => setMobNavVis(false)}>
                   <Link href="#">Work</Link>
                 </li>
 
-                <li className="px-5 py-3">
+                <li className="px-5 py-3" onClick={() => setMobNavVis(false)}>
                   <Link href="/about">About</Link>
                 </li>
 
-                <li className="px-5 py-3">
-                  <Link href="#"> Contact</Link>
+                <li className="px-5 py-3" onClick={() => setMobNavVis(false)}>
+                  <Link href="#"> Hobbies</Link>
                 </li>
               </ul>
             </div>
             <div className="ml-auto md:block hidden">
               <ul className="flex items-center font-epilogue gap-[80px]">
                 <li className="px-5 py-3">
-                  <Link href="#">Work</Link>
+                  <Link href="/#work">Work</Link>
                 </li>
 
                 <li className="px-5 py-3">
@@ -97,7 +97,7 @@ function Navbar() {
                 </li>
 
                 <li className="px-5 py-3">
-                  <Link href="#"> Contact</Link>
+                  <Link href="/#hobbies"> Hobbies</Link>
                 </li>
               </ul>
             </div>

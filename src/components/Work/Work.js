@@ -63,7 +63,7 @@ function Work() {
     }
   }, [])
     return (
-      <section className="bg-white">
+      <section id="work" className="bg-white">
         <div className="border-b md:py-10 py-3 text-center font-semibold md:text-4xl text-2xl bg-white">
           My Work
         </div>

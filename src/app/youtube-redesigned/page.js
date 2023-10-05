@@ -221,7 +221,7 @@ function CaseStudy2() {
             ></Image>
           </div>
           <div className="flex justify-center">
-            <div className="my-7 border border-[#414141] w-fit p-3">
+            <div className="my-7 border border-[#414141] w-fit p-3 hover:bg-[#F0F0F0]">
               <Link href="#top" className="bg-white ">
                 <Image
                   src="/images/up.svg"
