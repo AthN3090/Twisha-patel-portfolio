@@ -14,12 +14,15 @@ function Loading() {
     >
     
     <motion.div 
-    initial={{ opacity: 0,
+    initial={{ 
+        opacity:"0",
+        filter: "blur(1px)",
         y:' 0%',
         x:'0%'
     }} 
     animate={{ 
-        opacity: [0, 1, 1, 1],
+        opacity:[0,1,1,1],
+        filter: ["blur(10px)","blur(0px)","blur(0px)","blur(0px)"],
         y:['0%', '0%', '0%', '-200%'],
         
         
