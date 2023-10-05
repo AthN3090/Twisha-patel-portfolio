@@ -73,13 +73,13 @@ function Navbar() {
               }
             >
               <div
-                className="absolute top-4 right-5"
+                className="absolute top-3 right-4"
                 onClick={() => setMobNavVis(false)}
               >
                 <Image
                   src="/images/mobilenav-cross.png"
-                  height={20}
-                  width={20}
+                  height={24}
+                  width={24}
                   alt="mobilenav"
                 />
               </div>

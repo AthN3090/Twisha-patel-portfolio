@@ -70,7 +70,7 @@ function Hobby() {
                 <div className="sm:group-hover:opacity-100 sm:opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
                   <div className="font-epilogue sm:p-10 p-5  absolute bottom-0 left-0">
                     <p className="text-2xl md:text-4xl text-white mb-5">Sketches and Painting</p>
-                    <Link href="/illustrations">
+                    <Link href="/sketches">
                       <button className="px-3 py-2 md:py-3 md:px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                         <span className="pt-[2px]">View Artwork </span>
                         <Image
@@ -151,7 +151,7 @@ function Hobby() {
                 <div className="sm:group-hover:opacity-100 sm:opacity-0 transition-all absolute h-full w-full bg-[rgba(0,0,0,0.5)] top-0 left-0">
                   <div className="font-epilogue sm:p-10 p-5 absolute bottom-0 left-0">
                     <p className="text-2xl md:text-4xl text-white mb-5">Hand Sewing</p>
-                    <Link href="/Illustrations">
+                    <Link href="/sewing">
                       <button className="px-3 py-2 md:py-3 md:px-5 border border-[#828282] bg-white flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                         <span className="pt-[2px]">View Hand Stitched clothes </span>
                         <Image

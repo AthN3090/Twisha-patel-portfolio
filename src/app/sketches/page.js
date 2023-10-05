@@ -12,55 +12,55 @@ function Sketches() {
                 <Image src="/images/right-arrow.svg" height={36} width={36} alt="left-arrow"></Image>
             </Link>
         </div>
-        <div className="max-w-[1280px] mx-auto border-l border-r bg-white p-2">
+        <div className="max-w-[1280px] gap-4 mx-auto border-l border-r bg-white p-4">
         <div>
-            <div className="flex flex-col flex-wrap h-[5800px] items-center content-center">
-                <div className="p-2">
+            <div className="sm:columns-2 items-center content-center overflow-hidden">
+                <div className="mb-4">
                     <Image src="/images/hobby/sketches/1.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/2.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/3.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/4.gif" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/5.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/6.gif" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/7.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/8.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/9.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/10.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/11.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/12.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/13.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/14.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/15.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
-                <div className="p-2">
+                <div className=" mb-4">
                     <Image src="/images/hobby/sketches/16.png" height={700} width={615} alt="sketch" ></Image>
                 </div>
                 

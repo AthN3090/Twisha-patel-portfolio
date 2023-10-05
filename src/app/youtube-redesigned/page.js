@@ -33,9 +33,11 @@ function CaseStudy2() {
         <div className="bg-[#FAFAFA] " style={{}}>
           <div className="max-w-[1280px] px-4 py-14  mx-auto ">
             <div>
-              <p className="text-xl font-semibold  opacity-70">YOUTUBE REDESIGN</p>
+              <p className="text-xl font-semibold  opacity-70">
+                YOUTUBE REDESIGN
+              </p>
               <p className="text-4xl font-bold  mt-3">
-              Re-imagining How We Consume Educational Content on YouTube
+                Re-imagining How We Consume Educational Content on YouTube
               </p>
             </div>
             <div className="flex gap-4 mt-16 w-full md:justify-between flex-wrap">
@@ -221,29 +223,29 @@ function CaseStudy2() {
             ></Image>
           </div>
           <div className="flex justify-center">
-            <div className="my-7 border border-[#414141] w-fit p-3 hover:bg-[#F0F0F0]">
-              <Link href="#top" className="bg-white ">
+            <Link href="#top" className="bg-white ">
+              <div className="my-7 border border-[#414141] w-fit p-3 hover:bg-[#F0F0F0]">
                 <Image
                   src="/images/up.svg"
                   height={20}
                   width={20}
                   alt="to top"
                 ></Image>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
 
         {/* case study navigation */}
         <div className="flex w-full">
           <Link
-            className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282]"
+            className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282] group"
             href="/you-matter"
           >
-            <button className="flex gap-5 transition-all hover:gap-7 hover:underline items-center w-fit">
+            <button className="flex gap-5 transition-all group-hover:gap-7 group-hover:underline items-center w-fit">
               {/* hover:gap-7 hover:underline */}
               <Image
-              className="rotate-180"
+                className="rotate-180"
                 src="/images/right.svg"
                 height={16}
                 width={16}
@@ -253,10 +255,10 @@ function CaseStudy2() {
             </button>
           </Link>
           <Link
-            className="flex justify-center w-1/2 py-5 px-5 border-t border-[#828282]"
+            className="flex justify-center w-1/2 py-5 px-5 border-t border-[#828282] group"
             href="/azent"
           >
-            <button className=" flex gap-5 transition-all hover:gap-7 hover:underline items-center w-fit">
+            <button className=" flex gap-5 transition-all group-hover:gap-7 group-hover:underline items-center w-fit">
               <span className="pt-[2px]">Next Project </span>
               <Image
                 src="/images/right.svg"

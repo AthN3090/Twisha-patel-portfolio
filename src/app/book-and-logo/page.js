@@ -12,49 +12,49 @@ function BookAndLogo() {
                 <Image src="/images/right-arrow.svg" height={36} width={36} alt="left-arrow"></Image>
             </Link>
         </div>
-        <div className="max-w-[1280px] mx-auto border-l border-r bg-white p-2">
+        <div className="max-w-[1280px] mx-auto border-l border-r bg-white p-4">
         <div>
-            <div className="flex flex-col flex-wrap h-[3300px] items-center content-center">
-                <div className="p-2">
+            <div className="sm:columns-2 items-center content-center overflow-hidden">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/1.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/2.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/3.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/4.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/5.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/6.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/7.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/8.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/9.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/10.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/11.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/12.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/13.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/bookandlogo/14.png" height={700} width={615} alt="bookandlogo" ></Image>
                 </div>
                 

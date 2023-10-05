@@ -219,25 +219,25 @@ function CaseStudy3() {
             </p>
           </div>
           <div className="flex justify-center">
-            <div className="my-7 border border-[#414141] w-fit p-3 hover:bg-[#F0F0F0]">
-              <Link href="#top" className="bg-white ">
+            <Link href="#top" className="bg-white ">
+              <div className="my-7 border border-[#414141] w-fit p-3 hover:bg-[#F0F0F0]">
                 <Image
                   src="/images/up.svg"
                   height={20}
                   width={20}
                   alt="to top"
                 ></Image>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
         {/* case study navigation */}
         <div className="flex w-full">
           <Link
-            className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282]"
+            className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282] group"
             href="/youtube-redesigned"
           >
-            <button className="flex gap-5 transition-all hover:gap-7 hover:underline items-center w-fit">
+            <button className="flex gap-5 transition-all group-hover:gap-7 group-hover:underline items-center w-fit">
               {/* hover:gap-7 hover:underline */}
               <Image
                 className="rotate-180"
@@ -250,10 +250,10 @@ function CaseStudy3() {
             </button>
           </Link>
           <Link
-            className="flex justify-center w-1/2 py-5 px-5 border-t border-[#828282]"
+            className="flex justify-center w-1/2 py-5 px-5 border-t border-[#828282] group"
             href="/trinkerr"
           >
-            <button className=" flex gap-5 transition-all hover:gap-7 hover:underline items-center w-fit">
+            <button className=" flex gap-5 transition-all group-hover:gap-7 group-hover:underline items-center w-fit">
               <span className="pt-[2px]">Next Project </span>
               <Image
                 src="/images/right.svg"

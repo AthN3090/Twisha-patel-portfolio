@@ -12,28 +12,28 @@ function Illustrations() {
                 <Image src="/images/right-arrow.svg" height={36} width={36} alt="left-arrow"></Image>
             </Link>
         </div>
-        <div className="max-w-[1280px] mx-auto border-l border-r bg-white p-2">
+        <div className="max-w-[1280px] mx-auto border-l border-r bg-white p-4">
         <div>
-            <div className="flex flex-col flex-wrap h-[3300px] items-center content-center">
-                <div className="p-2">
+            <div className="sm:columns-2 items-center content-center overflow-hidden">
+                <div className="mb-4">
                     <Image src="/images/hobby/illustrations/1.png" height={700} width={615} alt="illustration" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/illustrations/2.png" height={700} width={615} alt="illustration" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/illustrations/3.png" height={700} width={615} alt="illustration" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/illustrations/4.png" height={700} width={615} alt="illustration" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/illustrations/5.png" height={700} width={615} alt="illustration" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/illustrations/6.png" height={700} width={615} alt="illustration" ></Image>
                 </div>
-                <div className="p-2">
+                <div className="mb-4">
                     <Image src="/images/hobby/illustrations/7.png" height={700} width={615} alt="illustration" ></Image>
                 </div>
                 

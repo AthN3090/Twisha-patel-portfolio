@@ -36,7 +36,7 @@ function Loading() {
     <motion.div 
     initial={{ translateY:'100%' }} 
     animate={{ translateY:'0'  }}
-    transition={{ ease:"easeIn", delay: 0.7 , duration:"0.35"}}
+    transition={{ ease:"easeIn", delay: 0.7 , duration:"0.5"}}
     className="bg-landing-loading h-full w-full z-10 absolute bg-no-repeat bg-[length:100%_100%] aspect-video"
     >   
     </motion.div>
