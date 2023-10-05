@@ -166,7 +166,7 @@ function Work() {
                         with YouTube Learning.{" "}
                       </p>
 
-                      <Link href="/youtube-redesign">
+                      <Link href="/youtube-redesigned">
                         <button className="md:py-3 md:px-5 p-2 border border-[#828282] flex gap-5 transition-all hover:gap-7 hover:underline items-center">
                           <span className="pt-[2px]">Read case study </span>
                           <Image

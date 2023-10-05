@@ -90,7 +90,7 @@ export default function Home() {
         </div> */}
                 </div>
               </div>
-              <div className="sm:h-[22vw] md:bg-ux bg-no-repeat md:bg-[length:100%]  bg-[length:100%_100%] w-full flex items-center p-5">
+              <div className="bg-[#242424] sm:h-[22vw] md:bg-ux bg-no-repeat md:bg-[length:100%]  bg-[length:100%_100%] w-full flex items-center p-5">
                 <div className="flex flex-col justify-center gap-4 items-center relative max-w-[1024px] mx-auto text-center aspect-video">
                   <p className="text-[#FEFEFE] md:text-xl lg:text-2xl px-4">
                     Design is really an act of communication, which means having

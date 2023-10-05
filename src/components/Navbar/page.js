@@ -82,7 +82,7 @@ function Navbar() {
                 </li>
 
                 <li className="px-5 py-3" onClick={() => setMobNavVis(false)}>
-                  <Link href="#"> Hobbies</Link>
+                  <Link href="mailto:">Contact</Link>
                 </li>
               </ul>
             </div>
@@ -97,7 +97,7 @@ function Navbar() {
                 </li>
 
                 <li className="px-5 py-3">
-                  <Link href="/#hobbies"> Hobbies</Link>
+                  <Link href="mailto:"> Contact</Link>
                 </li>
               </ul>
             </div>
