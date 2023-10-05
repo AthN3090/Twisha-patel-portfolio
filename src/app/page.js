@@ -36,7 +36,7 @@ export default function Home() {
           animate={{ opacity: 1 }}
           transition={{ ease: "easeIn", duration: 0.5 }}
         >
-          <Navbar />
+          
           <main className="font-epilogue pt-12">
             <div>
               <div
@@ -115,7 +115,6 @@ export default function Home() {
             <Work />
             <Hobby />
           </main>
-          <Footer />
         </motion.div>
       )}
     </AnimatePresence>
