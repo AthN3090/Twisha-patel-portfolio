@@ -93,20 +93,20 @@ function Navbar() {
                 </li>
 
                 <li className="px-5 py-3" onClick={() => setMobNavVis(false)}>
-                  <Link href="mailto:">Contact</Link>
+                  <Link href="mailto:twishapatel.work@gmail.com">Contact</Link>
                 </li>
               </ul>
             </div>
             <div className="ml-auto md:block hidden">
               <ul className="flex items-center font-epilogue gap-[80px]">
-                <Link href="/#work" className="px-5 py-3 hover:bg-[#FAFAFA]">
+                <Link href="/#work" className="px-5 py-3 hover:border-l hover:border-r hover:bg-[#FAFAFA]">
                   <li >Work</li>
                 </Link>
 
-                <Link href="/about" className="px-5 py-3 hover:bg-[#FAFAFA]">
+                <Link href="/about" className="px-5 py-3 hover:border-l hover:border-r hover:bg-[#FAFAFA]">
                   <li>About</li>
                 </Link>
-                <Link href="/mailto:" className="px-5 py-3 hover:bg-[#FAFAFA]">
+                <Link href="mailto:twishapatel.work@gmail.com" className="px-5 py-3 hover:border-l hover:border-r hover:bg-[#FAFAFA]">
                   <li >Contact</li>
                 </Link>
               </ul>
