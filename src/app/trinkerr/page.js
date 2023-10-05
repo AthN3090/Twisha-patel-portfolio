@@ -191,7 +191,7 @@ function CaseStudy4() {
           <div className="max-w-[1280px] px-4 ">
             <video playsInline autoPlay loop muted className="w-full">
               <source
-                src="/images/trinkerr/design/trinkerr.mp4"
+                src="/images/trinkerr/design/trinkerr.MP4"
                 type="video/mp4"
               />
             </video>
@@ -333,7 +333,7 @@ function CaseStudy4() {
 
             <p className="my-7 font-semibold">Design</p>
             <video playsInline autoPlay loop muted className="w-full">
-              <source src="/images/trinkerr/design/tiqs.mp4" type="video/mp4" />
+              <source src="/images/trinkerr/design/tiqs.MP4" type="video/mp4" />
             </video>
           </div>
           <div className="mb-12">

@@ -10,7 +10,6 @@ import { AnimatePresence, motion } from "framer-motion"
 import { useEffect, useState } from 'react';
 export default function Home() {
   const [hover, setHover] = useState(false)
-  const [isLoading, setIsLoading] = useState(true)
   function changeToFaceBackground(e){
     setHover(true)
   }
@@ -18,18 +17,10 @@ export default function Home() {
     setHover(false)
   }
 
-  useEffect(()=> {
-    setTimeout(()=>{
-      setIsLoading(false)
-    }, 1300)
-  },[])
+  
 
 
   return (
-    <AnimatePresence>
-      {isLoading ? (
-        <Loading />
-      ) : (
         <motion.div
           layout
           initial={{ opacity: 0 }}
@@ -116,7 +107,5 @@ export default function Home() {
             <Hobby />
           </main>
         </motion.div>
-      )}
-    </AnimatePresence>
   );
 }
