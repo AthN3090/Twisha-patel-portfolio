@@ -9,11 +9,6 @@ import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Twisha Patel",
-  description: "Welcome to my portoflio!",
-};
-
 export default function RootLayout({ children }) {
 
   const [test, setTest] = useState(0)
@@ -26,6 +21,10 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+      <title>Twisha Patel</title>
+        <meta name='description' content='Welcome to my portoflio!' />
+      </head>
       <body className={inter.className}>
         <AnimatePresence >
           {isLoading ? (
