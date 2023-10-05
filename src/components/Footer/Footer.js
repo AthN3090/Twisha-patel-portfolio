@@ -2,7 +2,7 @@ import Image from "next/image";
 function Footer() {
     return (
       <footer className="bg-[#2D2D2D] text-white">
-        <div className="flex md:flex-row flex-col justify-between p-8 align-middle">
+        <div className="flex md:flex-row flex-col justify-between px-8 py-3 align-middle">
           <div className="flex justify-center">
             <p className="leading-[52px]">
               Designed by <span className="font-semibold">Twisha Patel✨</span>{" "}

@@ -4,7 +4,7 @@ function About() {
       <main className="flex justify-center bg-white">
         <div className="max-w-[1440px] mx-auto bg-[#FAFAFA] min-h-screen pt-16 flex flex-col lg:flex-row font-epilogue">
           <div className="lg:w-1/2 h-[60vh] w-full lg:h-auto relative flex items-center justify-center border-l">
-            <Image  className="p-0 lg:py-16 lg:px-20 px-4 py-4" src="/images/about.png" fill objectFit="contain" alt="about"/>
+            <Image  className="p-0 lg:py-16 lg:px-20 px-4 py-4" src="/images/about2.png" fill objectFit="contain" alt="about"/>
           </div>
           <div className="lg:w-1/2  lg:py-16 lg:px-20 px-4 py-4 border-r border-l">
             <p className="font-semibold xl:text-2xl">
