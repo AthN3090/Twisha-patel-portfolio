@@ -7,7 +7,7 @@ function Sketches() {
             <Link href="#" className="rounded-full hover:bg-[#F0F0F0] transition-all">
                 {/* <Image className="rotate-180" src="/images/gray-right-arrow.svg" height={36} width={36} alt="left-arrow"></Image> */}
             </Link>
-            <p className="sm:text-4xl text-[5vw]">Sketches and Paintings</p>
+            <p className="sm:text-4xl text-[5vw] text-center">Sketches and Paintings</p>
             <Link href="/illustrations" className="rounded-full  hover:bg-[#F0F0F0] transition-all">
                 <Image src="/images/right-arrow.svg" height={36} width={36} alt="left-arrow"></Image>
             </Link>

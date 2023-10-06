@@ -7,7 +7,7 @@ function Sewing() {
             <Link href="/book-and-logo" className="rounded-full hover:bg-[#F0F0F0] transition-all">
                 <Image src="/images/left-arrow.svg" height={36} width={36} alt="left-arrow"></Image>
             </Link>
-            <p className="sm:text-4xl text-[5vw]">Hand Stitched Clothes</p>
+            <p className="sm:text-4xl text-[5vw] text-center">Hand Stitched Clothes</p>
             <Link href="#" className="rounded-full  hover:bg-[#F0F0F0] transition-all">
                 {/* <Image src="/images/right-arrow.svg" height={36} width={36} alt="left-arrow"></Image> */}
             </Link>
