@@ -3,12 +3,12 @@ import Image from "next/image";
 function BookAndLogo() {
     return ( 
     <main className="font-epilogue pt-12 bg-[#F5F5F5]">
-        <div className="px-14 py-4 flex justify-between items-center bg-[#FAFAFA] border">
-            <Link href="#" className="rounded-full hover:bg-[#F0F0F0] transition-all">
+        <div className=" px-5 sm:px-14 py-4 flex justify-between items-center bg-[#FAFAFA] border">
+            <Link href="/illustrations" className="rounded-full hover:bg-[#F0F0F0] transition-all">
                 <Image src="/images/left-arrow.svg" height={36} width={36} alt="left-arrow"></Image>
             </Link>
-            <p className="text-4xl">Book Cover and Logo Redesign</p>
-            <Link href="#" className="rounded-full  hover:bg-[#F0F0F0] transition-all">
+            <p className="sm:text-4xl text-[5vw]">Book Cover and Logo Redesign</p>
+            <Link href="/sewing" className="rounded-full  hover:bg-[#F0F0F0] transition-all">
                 <Image src="/images/right-arrow.svg" height={36} width={36} alt="left-arrow"></Image>
             </Link>
         </div>

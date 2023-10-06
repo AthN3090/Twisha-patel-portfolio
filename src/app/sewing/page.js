@@ -3,13 +3,13 @@ import Image from "next/image";
 function Sewing() {
     return ( 
     <main className="font-epilogue pt-12 bg-[#F5F5F5]">
-        <div className="px-14 py-4 flex justify-between items-center bg-[#FAFAFA] border">
-            <Link href="#" className="rounded-full hover:bg-[#F0F0F0] transition-all">
+        <div className=" px-5 sm:px-14 py-4 flex justify-between items-center bg-[#FAFAFA] border">
+            <Link href="/book-and-logo" className="rounded-full hover:bg-[#F0F0F0] transition-all">
                 <Image src="/images/left-arrow.svg" height={36} width={36} alt="left-arrow"></Image>
             </Link>
-            <p className="text-4xl">Hand Stitched Clothes</p>
+            <p className="sm:text-4xl text-[5vw]">Hand Stitched Clothes</p>
             <Link href="#" className="rounded-full  hover:bg-[#F0F0F0] transition-all">
-                <Image src="/images/right-arrow.svg" height={36} width={36} alt="left-arrow"></Image>
+                {/* <Image src="/images/right-arrow.svg" height={36} width={36} alt="left-arrow"></Image> */}
             </Link>
         </div>
         <div className="max-w-[1280px] mx-auto border-l border-r bg-white p-2">

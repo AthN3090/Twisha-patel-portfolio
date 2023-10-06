@@ -41,7 +41,7 @@ function Navbar() {
       >
         <div className="mx-5">
           <div className="flex items-center">
-            <Link className="flex items-center" href="/">
+            <Link className="flex items-center " href="/">
               <div>
                 <Image
                   src="/images/diamond.gif"
@@ -99,14 +99,14 @@ function Navbar() {
             </div>
             <div className="ml-auto md:block hidden">
               <ul className="flex items-center font-epilogue gap-[80px]">
-                <Link href="/#work" className="px-5 py-3 hover:border-l hover:border-r hover:bg-[#FAFAFA]">
+                <Link href="/#work" className="px-5 py-3 hover:inner-border hover:bg-[#FAFAFA]">
                   <li >Work</li>
                 </Link>
 
-                <Link href="/about" className="px-5 py-3 hover:border-l hover:border-r hover:bg-[#FAFAFA]">
+                <Link href="/about" className="px-5 py-3 hover:inner-border  hover:bg-[#FAFAFA]">
                   <li>About</li>
                 </Link>
-                <a href="mailto:twishapatel.work@gmail.com" className="px-5 py-3 hover:border-l hover:border-r hover:bg-[#FAFAFA]">
+                <a href="mailto:twishapatel.work@gmail.com" className="px-5 py-3 hover:inner-border  hover:bg-[#FAFAFA]">
                   <li >Contact</li>
                 </a>
               </ul>
