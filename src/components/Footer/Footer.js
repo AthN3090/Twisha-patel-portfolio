@@ -4,7 +4,7 @@ function Footer() {
       <footer className="bg-[#2D2D2D] text-white">
         <div className="flex md:flex-row flex-col justify-between px-8 py-3 align-middle">
           <div className="flex justify-center">
-            <p className="leading-[52px]">
+            <p className="sm:leading-[52px] text-sm sm:text-base text-center">
               Designed by <span className="font-semibold">Twisha Patel✨</span>{" "}
               - Copyright 2023
             </p>

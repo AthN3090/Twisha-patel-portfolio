@@ -25,6 +25,7 @@ function CaseStudy3() {
           style={{
             backgroundImage: "url('./images/azent/hero.png')",
             backgroundPosition: "left",
+            backgroundSize:"auto 100%",
             backgroundRepeat: "no-repeat",
           }}
           className="lg:h-[30vw] md:h-[40vw] sm:h-[50vw] h-[70vw] aspect-auto custom-background-property bg-sm md:bg-md lg:bg-lg xl:bg-xl"
@@ -34,7 +35,9 @@ function CaseStudy3() {
           <div className="max-w-[1280px] px-4 py-14  mx-auto ">
             <div>
               <p className="text-xl font-semibold  opacity-70">
-                Azent overseas education 🔗
+                <a href="https://www.azent.com/">
+                  Azent overseas education 🔗
+                </a>
               </p>
               <p className="text-4xl font-bold  mt-3">
                 Expense Calculator for Students Planning to Study Abroad
@@ -55,11 +58,6 @@ function CaseStudy3() {
                 <p className="text-xs font-bold opacity-70">TEAM</p>
                 <p className="font-semibold">Solo Designer</p>
               </div>
-              <div className="hidden sm:block w-[0.5px] border border-[#A2A2A2]"></div>
-              <div className="mr-14">
-                <p className="text-xs font-bold opacity-70">DURATION</p>
-                <p className="font-semibold">4 Weeks</p>
-              </div>
             </div>
           </div>
           <div></div>
@@ -68,6 +66,18 @@ function CaseStudy3() {
         <div className="max-w-[1280px] px-4 mx-auto mt-10 font-epilogue text-[#2D2D2D] leading-7 text-lg">
           {/* Introduction */}
           <div>
+            <p
+              style={{ backgroundColor: "rgba(139, 182, 239, 0.11)" }}
+              className="p-4 my-4"
+            >
+              <a
+                href="https://azent.com/expense-calculator"
+                className="text-[#3668AA] text-xl font-semibold hover:underline"
+              >
+                ▶️ Interact with my design on the live website
+              </a>
+            </p>
+            <br></br>
             <p className="text-[#3668AA] text-xl font-bold mb-5">
               Introduction 📝
             </p>
@@ -110,6 +120,46 @@ function CaseStudy3() {
                 Existing tools and resources offered an overwhelming amount of
                 information, making it difficult for students to extract
                 relevant data.{" "}
+              </li>
+            </ol>
+          </div>
+          <div className="my-14">
+            <p className="text-[#3668AA] text-xl font-bold mb-5">Research 🔍</p>
+            <p className="my-6 font-semibold">User Interviews </p>
+            <p className="mb-5">
+              To understand the pain points and needs of the target audience, I
+              conducted interviews with current and prospective students
+              planning to study abroad. Key findings included:
+            </p>
+            <ul className="list-disc pl-5">
+              <li>
+                Students often underestimated the living costs in foreign
+                countries.
+              </li>
+              <li>Many were overwhelmed by the various expenses involved.</li>
+              <li>
+                Users wanted a tool that was simple, intuitive, and provided a
+                breakdown of costs.
+              </li>
+            </ul>
+            <p className="my-6 font-semibold">Key Findings </p>
+            <ol className="list-decimal pl-5">
+              <li>
+                Students desired a single, comprehensive tool that could provide
+                an estimate of total expenses with minimal input.
+              </li>
+              <li>
+                Real-life examples and scenarios were highly valued by students,
+                as they provided a more relatable context for expense
+                calculation.
+              </li>
+              <li>
+                Clarity in currency conversion and up-to-date information on
+                tuition fees and living costs were crucial.
+              </li>
+              <li>
+                Students were open to budgeting and expense tracking features
+                but preferred them as optional.
               </li>
             </ol>
           </div>

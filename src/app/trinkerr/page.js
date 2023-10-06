@@ -24,20 +24,23 @@ function CaseStudy4() {
         <div
           style={{
             backgroundImage: "url('./images/trinkerr/hero.png')",
-            backgroundPosition: "left",
+            backgroundPosition:"left",
+            backgroundSize:"auto 100%",
             backgroundRepeat: "no-repeat",
           }}
-          className="lg:h-[30vw] md:h-[40vw] sm:h-[50vw] h-[70vw] aspect-auto custom-background-property bg-sm md:bg-md lg:bg-lg xl:bg-xl"
+          className="lg:h-[30vw] md:h-[40vw] sm:h-[50vw] h-[70vw] aspect-auto bg-sm md:bg-md lg:bg-lg xl:bg-xl"
           ref={banner}
         ></div>
         <div className="bg-[#FAFAFA] " style={{}}>
           <div className="max-w-[1280px] px-4 py-14  mx-auto ">
             <div>
               <p className="text-xl font-semibold  opacity-70">
-                Azent overseas education 🔗
+                <a href="https://www.trinkerr.com/">Trinkerr 🔗 </a> &{" "}
+                <a href="https://tiqs.in/">TIQS 🔗</a>
               </p>
               <p className="text-4xl font-bold  mt-3">
-                Expense Calculator for Students Planning to Study Abroad
+                Redesigning Trinkerr Web App & Building a Broker App from
+                Scratch
               </p>
             </div>
             <div className="flex gap-4 mt-16 w-full md:justify-between flex-wrap">
@@ -63,7 +66,7 @@ function CaseStudy4() {
         <div className="max-w-[1280px] px-4 mx-auto mt-10 font-epilogue text-[#2D2D2D] leading-7 text-lg">
           {/* Introduction */}
           <div>
-            <p className="text-[#3668AA] text-xl font-bold mb-5">
+            <p className="text-[#8C79BC] text-xl font-bold mb-5">
               Introduction 📝
             </p>
             <p>
@@ -89,7 +92,7 @@ function CaseStudy4() {
           {/* Identifying the problems */}
           <div className="my-14">
             <p className="text-3xl my-6">Project 1 - Trinkerr Web App Revamp</p>
-            <p className="text-[#3668AA] text-xl font-bold mb-5">
+            <p className="text-[#8C79BC] text-xl font-bold mb-5">
               A Little Background...
             </p>
             <p className="mb-5">
@@ -104,7 +107,7 @@ function CaseStudy4() {
           </div>
           {/* Ideation */}
           <div className="my-14">
-            <p className="text-[#3668AA] text-xl font-bold mb-5">
+            <p className="text-[#8C79BC] text-xl font-bold mb-5">
               Project Goals 🎯
             </p>
             <ol className="list-decimal pl-5">
@@ -125,7 +128,7 @@ function CaseStudy4() {
           </div>
           {/* Research */}
           <div className="my-14">
-            <p className="text-[#3668AA] text-xl font-bold mb-5">Research 🔍</p>
+            <p className="text-[#8C79BC] text-xl font-bold mb-5">Research 🔍</p>
             <p className="mb-5">
               To understand user needs and preferences, I collaborated with my
               design team and conducted the following research activities:
@@ -145,21 +148,23 @@ function CaseStudy4() {
             </ul>
             <br></br>
             <p className="mb-5 font-semibold">Key Findings </p>
-            <ul className="list-disc pl-5">
+            <ol className="list-decimal pl-5">
               <li>
-                <span className="font-semibold">User Research</span>- We
-                conducted interviews with existing Trinkerr users to gather
-                insights into their pain points and expectations from the
-                platform.
+                Users wanted a streamlined platform with easy access to stock
+                information and trading tools.
+              </li>
+              <li>Mobile accessibility was a priority for many users.</li>
+              <li>
+                The watchlist, Option Chain, and trading features were highly
+                anticipated.
               </li>
               <li>
-                <span className="font-semibold">Competitive Analysis</span>- We
-                analyzed competitors and industry leaders to identify trends and
-                best practices.
+                Users desired a simple and clean design with an intuitive
+                navigation structure.
               </li>
-            </ul>
+            </ol>
           </div>
-          <p className="text-[#3668AA] text-xl font-bold mb-5">
+          <p className="text-[#8C79BC] text-xl font-bold mb-5">
             Final Design Solution 😎{" "}
           </p>
           <p className="mb-5 font-semibold">Prototyping </p>
@@ -203,7 +208,7 @@ function CaseStudy4() {
         {/* conclusion */}
         <div className="max-w-[1280px] px-4 mx-auto mt-10 font-epilogue text-[#2D2D2D] leading-7 text-lg relative">
           <div className="mb-12">
-            <p className="text-[#3668AA] text-xl font-bold mt-10">
+            <p className="text-[#8C79BC] text-xl font-bold mt-10">
               Results and Impact 💯
             </p>
             <p className="my-5">
@@ -238,17 +243,14 @@ function CaseStudy4() {
           <div className="my-14">
             <p className="text-3xl my-6">Project 2 - TIQS Broker Platform</p>
             <div>
-              <p className="text-[#3668AA] text-xl font-bold mb-5">
+              <p className="text-[#8C79BC] text-xl font-bold mb-5">
                 A Little Background...
               </p>
               <p className="mb-5">
-                Trinkerr Fintech is India&apos;s leading platform for stock
-                market learning, offering users the ability to track markets,
-                practice F&O trading, explore rule-based portfolios, and access
-                stock health reports, all for free. The goal of this project was
-                to revamp the web app, improving its usability, and adding new
-                features such as a watchlist page, Option Chain, Futures and
-                Options trading, and a dedicated explore section.
+                TIQS is an upcoming broker platform, it was a complex fintech
+                product from branding to actual product design. The challenge
+                was to create an intuitive and efficient platform for trading
+                and investment, catering to both novice and experienced users.
               </p>
               <div className="flex justify-center">
                 <Image
@@ -261,27 +263,23 @@ function CaseStudy4() {
             </div>
           </div>
           <div className="my-14">
-            <p className="text-[#3668AA] text-xl font-bold mb-5">
+            <p className="text-[#8C79BC] text-xl font-bold mb-5">
               Project Goals 🎯
             </p>
             <ol className="list-decimal pl-5">
               <li>
-                Redesign the Trinkerr web app for a seamless and intuitive user
-                experience.
+              Establish the brand identity and design language for TIQS.
               </li>
               <li>
-                Introduce new features like the watchlist page, Option Chain,
-                Futures and Options trading, and an explore section for
-                discovery of portfolios, stocks, and expert traders.
+              Design the user flow and interface for the broker web app.
               </li>
               <li>
-                Create a responsive design system for enhanced accessibility
-                across devices.
+              Create a user-centric and efficient trading experience.
               </li>
             </ol>
           </div>
           <div className="mb-12">
-            <p className="text-[#3668AA] text-xl font-bold mt-10 mb-5">
+            <p className="text-[#8C79BC] text-xl font-bold mt-10 mb-5">
               Design Process 👩🏻‍🎨
             </p>
             <p className="mb-5 font-semibold">
@@ -337,7 +335,7 @@ function CaseStudy4() {
             </video>
           </div>
           <div className="mb-12">
-            <p className="text-[#3668AA] text-xl font-bold mt-10">
+            <p className="text-[#8C79BC] text-xl font-bold mt-10">
               Conclusion 👩🏻‍💻
             </p>
             <p className="my-5">

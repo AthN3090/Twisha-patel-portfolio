@@ -142,6 +142,8 @@ function CaseStudy1() {
               <p className="mt-6 font-semibold">Insights from the survey- </p>
               <br></br>
               <ul className="list-disc pl-5 flex flex-col gap-4">
+                <li>People <span className="font-semibold">with pets have a better routine</span> than non-pet people. </li>
+                <li>People tend to stay consistent when they are <span className="font-semibold">accountable</span> with or for someone.</li>
                 <li>More than 50% of people were between the age of 21-30.</li>
                 <li>
                   Number of females using self-care apps & practicing self-care
@@ -380,7 +382,7 @@ function CaseStudy1() {
                     <li>
                       There will be a{" "}
                       <span className="font-semibold">
-                        separate app for the therapists
+                      separate app for the therapists{" "}
                       </span>
                       partnered with our team.
                     </li>
@@ -393,9 +395,9 @@ function CaseStudy1() {
           <div className="flex flex-col items-center my-7">
             <p className="font-bold p-4 text-xl">
               Final Designs - (
-              <Link href="https://www.figma.com/proto/GTNfdyupy0CJQrSPOp2OIU/You-Matter?node-id=1-6&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A6&t=nSWzJOzjDO2rTy6Q-1&mode=design">
+              <a target="_blank" href="https://www.figma.com/proto/GTNfdyupy0CJQrSPOp2OIU/You-Matter?node-id=1-6&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A6&t=nSWzJOzjDO2rTy6Q-1&mode=design">
                 <span className="text-[#67895E]">click here </span>
-              </Link>
+              </a>
               to interact with the prototype)
             </p>
             <div className="max-w-[1280px] px-4 ">

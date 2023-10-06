@@ -36,6 +36,9 @@ function Illustrations() {
                 <div className="mb-4">
                     <Image src="/images/hobby/illustrations/7.png" height={700} width={615} alt="illustration" ></Image>
                 </div>
+                <div className="mb-4">
+                    <Image src="/images/hobby/illustrations/8.png" height={700} width={615} alt="illustration" ></Image>
+                </div>
                 
             </div>
         </div>

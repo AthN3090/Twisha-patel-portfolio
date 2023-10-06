@@ -189,12 +189,9 @@ function CaseStudy2() {
               width={1500}
               alt="chart"
             ></Image>
-            <p className="my-4 font-semibold">Storyboard </p>
+            <p className="my-4 font-semibold">User Flowchart </p>
             <p className="mb-4">
-              A storyboard is a great instrument for ideation. It’s an effective
-              and inexpensive way to capture, relate, and explore the app in a
-              real world setting. The story below describes Eve’s experience
-              with the app.
+            The user flow was created to inform my design and show how the new features would be implemented to the existing platform:
             </p>
             <Image
               src="/images/youtube/flowchart.png"
@@ -209,9 +206,9 @@ function CaseStudy2() {
         <div className="flex flex-col items-center my-7">
           <p className="font-bold p-4 text-xl">
             Final Designs - (
-            <Link href="https://www.figma.com/proto/EDjUFfurwOLMZxWzGrx7pR/Youtube-desk?type=design&node-id=62-94&t=VG5FwgjEX7Ti6Cwy-1&scaling=contain&page-id=0%3A1&starting-point-node-id=62%3A94&mode=design">
+            <a  target="_blank" href="https://www.figma.com/proto/EDjUFfurwOLMZxWzGrx7pR/Youtube-desk?type=design&node-id=62-94&t=VG5FwgjEX7Ti6Cwy-1&scaling=contain&page-id=0%3A1&starting-point-node-id=62%3A94&mode=design">
               <span className="text-[#CA3D41]">click here </span>
-            </Link>
+            </a>
             to interact with the prototype)
           </p>
           <div className="max-w-[1280px] px-4 ">

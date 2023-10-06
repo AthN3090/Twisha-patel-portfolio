@@ -51,7 +51,7 @@ function Navbar() {
                 />
               </div>
               <div className="font-epilogue italic font-bold">
-                <p className="pt-1">TWISHA</p>
+                <p className="pt-2">TWISHA</p>
               </div>
             </Link>
             <div
@@ -84,29 +84,29 @@ function Navbar() {
                 />
               </div>
               <ul className="flex flex-col items-center justify-center font-epilogue  pt-1 gap-[80px]">
-                <li className="px-5 py-3" onClick={() => setMobNavVis(false)}>
+                <li className="px-5 py-3 font-medium" onClick={() => setMobNavVis(false)}>
                   <Link href="#">Work</Link>
                 </li>
 
-                <li className="px-5 py-3" onClick={() => setMobNavVis(false)}>
+                <li className="px-5 py-3 font-medium" onClick={() => setMobNavVis(false)}>
                   <Link href="/about">About</Link>
                 </li>
 
-                <li className="px-5 py-3" onClick={() => setMobNavVis(false)}>
+                <li className="px-5 py-3 font-medium" onClick={() => setMobNavVis(false)}>
                   <a href="mailto:twishapatel.work@gmail.com">Contact</a>
                 </li>
               </ul>
             </div>
             <div className="ml-auto md:block hidden">
-              <ul className="flex items-center font-epilogue gap-[80px]">
-                <Link href="/#work" className="px-5 py-3 hover:inner-border hover:bg-[#FAFAFA]">
+              <ul className="flex items-center font-epilogue gap-[80px]"> 
+                <Link href="/#work" className="px-5 py-3 border border-white hover:border-l-[#c2c2c2] hover:border-r-[#c2c2c2] hover:bg-[#FAFAFA]">
                   <li >Work</li>
                 </Link>
 
-                <Link href="/about" className="px-5 py-3 hover:inner-border  hover:bg-[#FAFAFA]">
+                <Link href="/about" className="px-5 py-3 border border-white hover:border-l-[#c2c2c2] hover:border-r-[#c2c2c2]  hover:bg-[#FAFAFA]">
                   <li>About</li>
                 </Link>
-                <a href="mailto:twishapatel.work@gmail.com" className="px-5 py-3 hover:inner-border  hover:bg-[#FAFAFA]">
+                <a href="mailto:twishapatel.work@gmail.com" className="px-5 py-3 border border-white hover:border-l-[#c2c2c2] hover:border-r-[#c2c2c2]  hover:bg-[#FAFAFA]">
                   <li >Contact</li>
                 </a>
               </ul>
