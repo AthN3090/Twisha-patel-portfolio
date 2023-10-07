@@ -85,7 +85,7 @@ function Navbar() {
               </div>
               <ul className="flex flex-col items-center justify-center font-epilogue  pt-1 gap-[80px]">
                 <li className="px-5 py-3 font-medium text-3xl" onClick={() => setMobNavVis(false)}>
-                  <Link href="#">Work</Link>
+                  <Link href="/#work">Work</Link>
                 </li>
 
                 <li className="px-5 py-3 font-medium text-3xl" onClick={() => setMobNavVis(false)}>
