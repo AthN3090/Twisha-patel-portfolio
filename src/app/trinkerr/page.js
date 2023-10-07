@@ -39,8 +39,7 @@ function CaseStudy4() {
                 <a  target="_blank" href="https://tiqs.in/"><span className="underline">TIQS </span> 🔗</a>
               </p>
               <p className="text-4xl font-bold  mt-3">
-                Redesigning Trinkerr Web App & Building a Broker App from
-                Scratch
+              Enhancing UX for trading and investing
               </p>
             </div>
             <div className="flex gap-4 mt-16 w-full md:justify-between flex-wrap">

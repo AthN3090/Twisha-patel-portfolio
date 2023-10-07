@@ -101,8 +101,7 @@ function Work() {
                         Trinkerr
                       </p>
                       <p className="font-semibold md:text-3xl lg:text-5xl text-xl md:mb-6 mb-3 lg:leading-[64px]">
-                        Redesigning Trinkerr Web App & Building a Broker App
-                        from Scratch{" "}
+                      Enhancing UX for trading and investing{" "}
                       </p>
                       <p className="font-normal md:text-base lg:text-xl lg:mb-20 md:mb-12 mb-4">
                         During my one year tenure as an Associate Product
