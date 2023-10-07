@@ -10,7 +10,7 @@ function Footer() {
             </p>
           </div>
           <div className="flex gap-7 justify-center p-3">
-            <a href="#">
+            <a href="mailto:twishapatel.work@gmail.com">
               <Image
                 src="/images/mail.png"
                 height={28}
@@ -18,7 +18,7 @@ function Footer() {
                 alt="mail"
               ></Image>
             </a>
-            <a href="#">
+            <a target="_blank" href="https://www.linkedin.com/in/twisha-patel-627453178/">
               <Image
                 src="/images/linkedin.png"
                 height={28}
@@ -26,7 +26,7 @@ function Footer() {
                 alt="linkedin"
               ></Image>
             </a>
-            <a href="#">
+            <a target="_blank" href="https://medium.com/@tp13twisha">
               <Image
                 src="/images/medium.png"
                 height={28}

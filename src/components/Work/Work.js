@@ -260,10 +260,7 @@ function Work() {
                         YouTube{" "}
                       </p>
                       <p className="font-normal md:text-base lg:text-xl lg:mb-20 md:mb-12 mb-4">
-                        For hundreds of millions of people around the world,
-                        YouTube and dozens of other free video platforms are
-                        shaping up to be a new educational model. So basically,
-                        the project focuses on the user experience YouTube is
+                        The project focuses on the user experience YouTube is
                         providing for educational purposes, and trying to
                         combine the features from other educational platforms
                         with YouTube Learning.{" "}

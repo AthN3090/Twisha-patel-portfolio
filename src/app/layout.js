@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
       <head>
       <title>Twisha Patel</title>
         <meta name='description' content='Welcome to my portoflio!' />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
         <AnimatePresence >
