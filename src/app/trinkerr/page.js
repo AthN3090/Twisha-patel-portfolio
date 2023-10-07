@@ -35,8 +35,8 @@ function CaseStudy4() {
           <div className="max-w-[1280px] px-4 py-14  mx-auto ">
             <div>
               <p className="text-xl font-semibold  opacity-70">
-                <a target="_blank" href="https://www.trinkerr.com/">Trinkerr 🔗 </a> &{" "}
-                <a target="_blank" href="https://tiqs.in/">TIQS 🔗</a>
+                <a  target="_blank" href="https://www.trinkerr.com/"><span className="underline">Trinkerr </span>🔗 </a> &{" "}
+                <a  target="_blank" href="https://tiqs.in/"><span className="underline">TIQS </span> 🔗</a>
               </p>
               <p className="text-4xl font-bold  mt-3">
                 Redesigning Trinkerr Web App & Building a Broker App from

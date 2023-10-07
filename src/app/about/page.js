@@ -2,8 +2,8 @@ import Image from "next/image";
 function About() {
     return (
       <main className="flex justify-center bg-white">
-        <div className="max-w-[1440px] mx-auto bg-[#FAFAFA] min-h-screen pt-16 flex flex-col lg:flex-row font-epilogue">
-          <div className="lg:w-1/2 h-[60vh] w-full lg:h-auto relative flex items-center justify-center border-l">
+        <div className="max-w-[1440px] mx-auto bg-[#FAFAFA] min-h-screen pt-12 flex flex-col lg:flex-row font-epilogue border">
+          <div className="lg:w-1/2 h-[60vh] w-full lg:h-auto relative flex items-center justify-center ">
             <Image
               className="p-0 lg:py-16 lg:px-20 px-4 py-4"
               src="/images/about2.png"
@@ -12,7 +12,7 @@ function About() {
               alt="about"
             />
           </div>
-          <div className="lg:w-1/2  lg:py-16 lg:px-20 px-4 py-4 border-r border-l">
+          <div className="lg:w-1/2  lg:py-16 lg:px-20 px-4 py-4 border-l">
             <p className="font-semibold xl:text-2xl">
               A little bit about myself
             </p>
@@ -30,7 +30,7 @@ function About() {
               to learn and grow. <br></br>
               <br></br>
               When I&apos;m not designing, you’ll often find me creating some
-              sort of art, solving puzzles, or or simply enjoying with dogs.
+              sort of art, playing chess, or simply enjoying with dogs.
               Apart from this, I swim, cycle, and play badminton to stay active.{" "}
               <br></br>
               <br></br>

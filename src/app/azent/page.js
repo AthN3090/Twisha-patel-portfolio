@@ -36,7 +36,7 @@ function CaseStudy3() {
             <div>
               <p className="text-xl font-semibold  opacity-70">
                 <a target="_blank" href="https://www.azent.com/">
-                  Azent overseas education 🔗
+                  <span className="underline">Azent overseas education</span> 🔗
                 </a>
               </p>
               <p className="text-4xl font-bold  mt-3">
