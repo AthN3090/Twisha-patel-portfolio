@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
       <title>Twisha Patel</title>
-        <meta name='description' content='Welcome to my portoflio!' />
+        <meta name='description' content='Welcome to my portfolio !' />
         <link rel="icon" href="/favicon.png" sizes="any" />
       </head>
       <body className={inter.className}>
