@@ -68,7 +68,7 @@ export default function Home() {
                     </p>
                     <a
                       href="#"
-                      className="flex items-center transition-all gap-3 hover:gap-5 hover:underline md:mt-10 mt-4 border 
+                      className="flex items-center transition-all gap-3 hover:gap-5 hover:underline md:mt-10 my-5 border 
                       w-fit p-3 md:justify-normal justify-between border-[#828282]"
                     >
                       {" "}
