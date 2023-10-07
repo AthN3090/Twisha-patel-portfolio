@@ -3,7 +3,7 @@ import Link from "next/link";
 function Hobby() {
     return (
       <section id="hobbies" className="bg-[#242424] ">
-        <div className="py-10 text-white  font-semibold text-4xl text-center border-b border-[#565656]">
+        <div className="md:py-10 py-3 text-white  font-semibold md:text-4xl text-2xl text-center border-b border-[#565656]">
           Hobby Projects
         </div>
         <div className="flex justify-between">

@@ -67,7 +67,8 @@ export default function Home() {
                       people and change their lives for the better.
                     </p>
                     <a
-                      href="#"
+                      target="_blank"
+                      href="/resume/TwishaPatel_resume.pdf"
                       className="flex items-center transition-all gap-3 hover:gap-5 hover:underline md:mt-10 my-5 border 
                       w-fit p-3 md:justify-normal justify-between border-[#828282]"
                     >

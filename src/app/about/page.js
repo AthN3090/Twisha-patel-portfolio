@@ -39,7 +39,8 @@ function About() {
             </p>
             <div className="flex justify-center items-center lg:justify-normal ">
               <a
-                href="#"
+                target="_blank"
+                href="/resume/TwishaPatel_resume.pdf"
                 className="flex items-center transition-all gap-3 hover:gap-5 hover:underline my-10 border w-full lg:w-fit lg:justify-normal justify-center p-3 border-[#828282]"
               >
                 {" "}
