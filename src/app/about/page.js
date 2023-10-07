@@ -37,10 +37,10 @@ function About() {
               Thank you for taking the time to get to know me a little better.
               🖤
             </p>
-            <div className="flex justify-center items-center lg:justify-normal">
+            <div className="flex justify-center items-center lg:justify-normal ">
               <a
                 href="#"
-                className="flex items-center transition-all gap-3 hover:gap-5 hover:underline my-10 border w-fit p-3 border-[#828282]"
+                className="flex items-center transition-all gap-3 hover:gap-5 hover:underline my-10 border w-full lg:w-fit lg:justify-normal justify-center p-3 border-[#828282]"
               >
                 {" "}
                 <span className="mt-[2px]">View my resume </span>
