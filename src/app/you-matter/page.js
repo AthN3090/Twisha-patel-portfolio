@@ -528,13 +528,14 @@ function CaseStudy1() {
           {/* case study navigation */}
           <div className="flex w-full">
             <Link
-              className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282] text-[#E7E7E7]"
-              href="#"
+              className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282] group"
+              href="/azent"
             >
-              <button className="flex gap-5 transition-all  items-center w-fit">
+              <button className="flex gap-5 transition-all  group-hover:gap-7 group-hover:underline items-center w-fit">
                 {/* hover:gap-7 hover:underline */}
                 <Image
-                  src="/images/gray-left.svg"
+                  className="rotate-180"
+                  src="/images/right.svg"
                   height={16}
                   width={16}
                   alt="right arrow"

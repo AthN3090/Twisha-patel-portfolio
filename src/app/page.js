@@ -68,7 +68,8 @@ export default function Home() {
                     </p>
                     <a
                       href="#"
-                      className="flex items-center transition-all gap-3 hover:gap-5 hover:underline md:mt-10 mt-3 border md:w-fit p-3 md:justify-normal justify-between border-[#828282]"
+                      className="flex items-center transition-all gap-3 hover:gap-5 hover:underline md:mt-10 mt-4 border 
+                      w-fit p-3 md:justify-normal justify-between border-[#828282]"
                     >
                       {" "}
                       <span className="mt-[2px]">View my resume </span>

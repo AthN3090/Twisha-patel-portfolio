@@ -252,13 +252,14 @@ function CaseStudy2() {
             </button>
           </Link>
           <Link
-            className="flex justify-center w-1/2 py-5 px-5 border-t border-[#828282] group"
-            href="/azent"
+            className="flex justify-center w-1/2 py-5 px-5 border-t border-[#828282] text-[#E7E7E7]"
+            href="#"
           >
-            <button className=" flex gap-5 transition-all group-hover:gap-7 group-hover:underline items-center w-fit">
+            <button className=" flex gap-5 transition-all  items-center w-fit">
               <span className="pt-[2px]">Next Project </span>
               <Image
-                src="/images/right.svg"
+              className="rotate-180"
+                src="/images/gray-left.svg"
                 height={16}
                 width={16}
                 alt="right arrow"

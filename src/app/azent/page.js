@@ -35,7 +35,7 @@ function CaseStudy3() {
           <div className="max-w-[1280px] px-4 py-14  mx-auto ">
             <div>
               <p className="text-xl font-semibold  opacity-70">
-                <a href="https://www.azent.com/">
+                <a target="_blank" href="https://www.azent.com/">
                   Azent overseas education 🔗
                 </a>
               </p>
@@ -70,7 +70,7 @@ function CaseStudy3() {
               style={{ backgroundColor: "rgba(139, 182, 239, 0.11)" }}
               className="p-4 my-4"
             >
-              <a
+              <a target="_blank"
                 href="https://azent.com/expense-calculator"
                 className="text-[#3668AA] text-xl font-semibold hover:underline"
               >
@@ -285,7 +285,7 @@ function CaseStudy3() {
         <div className="flex w-full">
           <Link
             className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282] group"
-            href="/youtube-redesigned"
+            href="/trinkerr"
           >
             <button className="flex gap-5 transition-all group-hover:gap-7 group-hover:underline items-center w-fit">
               {/* hover:gap-7 hover:underline */}
@@ -301,7 +301,7 @@ function CaseStudy3() {
           </Link>
           <Link
             className="flex justify-center w-1/2 py-5 px-5 border-t border-[#828282] group"
-            href="/trinkerr"
+            href="/you-matter"
           >
             <button className=" flex gap-5 transition-all group-hover:gap-7 group-hover:underline items-center w-fit">
               <span className="pt-[2px]">Next Project </span>

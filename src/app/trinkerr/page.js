@@ -35,8 +35,8 @@ function CaseStudy4() {
           <div className="max-w-[1280px] px-4 py-14  mx-auto ">
             <div>
               <p className="text-xl font-semibold  opacity-70">
-                <a href="https://www.trinkerr.com/">Trinkerr 🔗 </a> &{" "}
-                <a href="https://tiqs.in/">TIQS 🔗</a>
+                <a target="_blank" href="https://www.trinkerr.com/">Trinkerr 🔗 </a> &{" "}
+                <a target="_blank" href="https://tiqs.in/">TIQS 🔗</a>
               </p>
               <p className="text-4xl font-bold  mt-3">
                 Redesigning Trinkerr Web App & Building a Broker App from
@@ -372,37 +372,35 @@ function CaseStudy4() {
         </div>
         {/* case study navigation */}
         <div className="flex w-full">
-          <Link
-            className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282] group"
-            href="/azent"
-          >
-            <button className="flex gap-5 transition-all group-hover:gap-7 group-hover:underline items-center w-fit">
-              {/* hover:gap-7 hover:underline */}
-              <Image
-                className="rotate-180"
-                src="/images/right.svg"
-                height={16}
-                width={16}
-                alt="right arrow"
-              ></Image>
-              <span className="pt-[2px]">Previous Project </span>
-            </button>
-          </Link>
-          <Link
-            className="flex justify-center w-1/2 py-5 px-5 border-t border-[#828282] text-[#E7E7E7]"
-            href="#"
-          >
-            <button className=" flex gap-5 transition-all  items-center w-fit">
-              <span className="pt-[2px]">Next Project </span>
-              <Image
-                className="rotate-180"
-                src="/images/gray-left.svg"
-                height={16}
-                width={16}
-                alt="right arrow"
-              ></Image>
-            </button>
-          </Link>
+        <Link
+              className="flex justify-center w-1/2 py-5 px-5 border-t border-r border-[#828282] text-[#E7E7E7]"
+              href="#"
+            >
+              <button className="flex gap-5 transition-all  items-center w-fit">
+                {/* hover:gap-7 hover:underline */}
+                <Image
+                  src="/images/gray-left.svg"
+                  height={16}
+                  width={16}
+                  alt="right arrow"
+                ></Image>
+                <span className="pt-[2px]">Previous Project </span>
+              </button>
+            </Link>
+            <Link
+              className="flex justify-center w-1/2 py-5 px-5 border-t border-[#828282] group"
+              href="/azent"
+            >
+              <button className=" flex gap-5 transition-all group-hover:gap-7 group-hover:underline items-center w-fit">
+                <span className="pt-[2px]">Next Project </span>
+                <Image
+                  src="/images/right.svg"
+                  height={16}
+                  width={16}
+                  alt="right arrow"
+                ></Image>
+              </button>
+            </Link>
         </div>
       </div>
     </main>
