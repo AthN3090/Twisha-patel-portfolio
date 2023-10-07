@@ -28,7 +28,7 @@ function Loading() {
         
     }}
     transition={{ease:"easeIn", duration:"1.2",times: [0, 0.3, 0.6, 1]}}
-    className="font-epilogue font-bold text-6xl w-fit"
+    className="font-epilogue font-bold sm:text-6xl w-fit text-center text-3xl"
     >   
     Twisha Patel.
     </motion.div>
