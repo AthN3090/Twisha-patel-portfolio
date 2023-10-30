@@ -14,7 +14,7 @@ function About() {
           </div>
           <div className="lg:w-1/2  lg:py-16 lg:px-20 px-4 py-4 border-l">
             <p className="font-semibold xl:text-2xl">
-              A little bit about myself
+              A little bit about myself ...
             </p>
             <p className="mt-4 leading-7 ">
               My name, Twisha, carries the beautiful meaning of &quot;divine
