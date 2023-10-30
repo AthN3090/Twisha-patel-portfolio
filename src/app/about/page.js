@@ -14,7 +14,7 @@ function About() {
           </div>
           <div className="lg:w-1/2  lg:py-16 lg:px-20 px-4 py-4 border-l">
             <p className="font-semibold xl:text-2xl">
-              A little bit about myself
+              A little bit about myself ...
             </p>
             <p className="mt-4 leading-7 ">
               My name, Twisha, carries the beautiful meaning of &quot;divine
@@ -40,7 +40,7 @@ function About() {
             <div className="flex justify-center items-center lg:justify-normal ">
               <a
                 target="_blank"
-                href="/resume/TwishaPatel_resume.pdf"
+                href="/resume/Twisha_Resume.pdf"
                 className="flex items-center transition-all gap-3 hover:gap-5 hover:underline my-10 border w-full lg:w-fit lg:justify-normal justify-center p-3 border-[#828282]"
               >
                 {" "}
